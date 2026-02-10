@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Button } from './ui/button';
 
 export default function NavTwo() {
@@ -30,7 +31,10 @@ export default function NavTwo() {
   ];
   return (
     <div className='w-full bg-black flex justify-between items-center h-[60px]'>
-      <div className='text-white h-full flex items-center px-6'>Floot</div>
+      <div className='text-white h-full flex items-center px-6 gap-2'>
+        <div><Image src="/logo.svg" alt="Floot" width={40} height={40} /></div>
+        <div className='text-white text-2xl font-bold'>Floot</div>
+      </div>
       <div className='h-full flex items-center'>
         <div className='flex items-center'>
           {links.map((link) => (
