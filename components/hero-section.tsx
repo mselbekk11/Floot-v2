@@ -10,7 +10,7 @@ export default function HeroSection() {
         <section className='relative py-32 md:py-44 lg:py-52'>
           <div className='relative z-30 mx-auto max-w-5xl px-6 text-center'>
             <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl'>
-              The easiest way to build web apps
+              The easiest way to build web apps.
             </h1>
 
             <p className='text-muted-foreground mx-auto mb-7 mt-3 max-w-xl text-balance text-xl'>
