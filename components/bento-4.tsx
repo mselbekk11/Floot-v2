@@ -8,7 +8,7 @@ import { CardDecorator } from "@/components/card-decorator"
 
 export default function BentoFour() {
     return (
-        <section className="bg-background @container py-24">
+        <section className="bg-background @container py-24 dark">
             <h2 className="sr-only">Quartz Bento Four</h2>
 
             <div className="mx-auto w-full max-w-7xl px-6">

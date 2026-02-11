@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx convex dev:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build:*)",
+      "Bash(tree:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "WebFetch(domain:ai-sdk.dev)",
+      "Bash(curl:*)",
+      "Bash(jq:*)",
+      "Bash(grep:*)",
+      "Bash(npx convex env:*)",
+      "Bash(npx convex deployment list:*)"
+    ]
+  }
+}

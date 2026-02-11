@@ -1,6 +1,14 @@
 import React from 'react';
 // import HeroHeader from '@/components/header';
 import { ProductIllustration } from '@/components/ui/illustrations/product-illustration';
+import {
+  PromptInput,
+  PromptInputTextarea,
+  PromptInputToolbar,
+  PromptInputTools,
+  PromptInputSubmit,
+} from './prompt-input';
+import Chatbox from './chatbox';
 
 export default function HeroSection() {
   return (
@@ -17,7 +25,18 @@ export default function HeroSection() {
               Create apps and websites by chatting with AI
             </p>
 
-            <ProductIllustration />
+            {/* <ProductIllustration /> */}
+
+            <div className='max-w-[800px] mx-auto'>
+            {/* <PromptInput>
+              <PromptInputTextarea className="min-h-[100px]"/>
+              <PromptInputToolbar>
+                <PromptInputTools />
+                <PromptInputSubmit />
+              </PromptInputToolbar>
+            </PromptInput> */}
+            <Chatbox />
+            </div>
           </div>
         </section>
       </main>
