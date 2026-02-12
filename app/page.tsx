@@ -1,16 +1,11 @@
 import BentoFour from '@/components/bento-4';
+import BentoFive from '@/components/bento-5';
 import CallToAction from '@/components/call-to-action';
 import Discover from '@/components/discover';
-import FeaturesSectionTen from '@/components/features-10';
-// import DiscoverTwo from '@/components/discover-two';
-import FeaturesSectionNine from '@/components/features-9';
+import FeatureBase from '@/components/feature-base';
 import FooterSection from '@/components/footer';
 import HeroSection from '@/components/hero-section';
 import NavTwo from '@/components/nav-two';
-import Image from 'next/image';
-// import FeaturesSectionA from '@/components/features-1-a';
-// import FeaturesSectionB from '@/components/features-1-b';
-// import FeaturesSectionC from '@/components/features-1-c';
 
 export default function Page() {
   return (
@@ -20,8 +15,10 @@ export default function Page() {
       <Discover />
       {/* <DiscoverTwo /> */}
       {/* <FeaturesSectionNine /> */}
-      <FeaturesSectionTen />
-      <BentoFour />
+      {/* <FeaturesSectionTen /> */}
+      <FeatureBase />
+      {/* <BentoFour /> */}
+      <BentoFive />
       <CallToAction />
       <FooterSection />
 
