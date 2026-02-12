@@ -1,9 +1,9 @@
 import { Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
 
-export default function Chatbox() {
+export default function ChatboxTwo() {
   return (
-    <div className='px-[4px] pt-[4px] pb-[4px] rounded-md bg-linear-to-r from-orange-400 via-pink-500 to-purple-600'>
+    <div className='px-[3px] pt-[3px] pb-[3px] rounded-md bg-linear-to-r from-[#9B17F7] via-[#D13AC0] to-[#DE3AB4] shadow-2xl shadow-black'>
       <div className='flex items-center gap-3 bg-white px-5 py-3 rounded-md'>
         <input
           type='text'

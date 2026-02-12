@@ -9,13 +9,14 @@ import {
   PromptInputSubmit,
 } from './prompt-input';
 import Chatbox from './chatbox';
+import ChatboxTwo from './chatbox-two';
 
 export default function HeroSection() {
   return (
     <>
       {/* <HeroHeader /> */}
-      <main role='main' className='bg-background overflow-hidden'>
-        <section className='relative py-32 md:py-44 lg:py-52'>
+      <main role='main' className='bg-[#F0EDFF] overflow-hidden'>
+        <section className='relative py-32 md:py-44 lg:py-62'>
           {/* Background pattern */}
           {/* <div
             aria-hidden
@@ -31,7 +32,7 @@ export default function HeroSection() {
           /> */}
           <div className='relative z-10 mx-auto max-w-5xl px-6 text-center'>
             <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl heading-serif'>
-              The easiest way <br /> to build web apps.
+              Build powerful apps fast. <br /> No code needed.
             </h1>
 
             <p className='text-muted-foreground mx-auto mb-7 mt-4 max-w-xl text-balance text-lg'>
@@ -41,14 +42,15 @@ export default function HeroSection() {
             {/* <ProductIllustration /> */}
 
             <div className='max-w-[800px] mx-auto'>
-            {/* <PromptInput>
+              {/* <PromptInput>
               <PromptInputTextarea className="min-h-[100px]"/>
               <PromptInputToolbar>
                 <PromptInputTools />
                 <PromptInputSubmit />
               </PromptInputToolbar>
             </PromptInput> */}
-            <Chatbox />
+              {/* <Chatbox /> */}
+              <ChatboxTwo />
             </div>
           </div>
         </section>
