@@ -46,7 +46,7 @@ export default function FooterSection() {
     return (
         <footer
             role="contentinfo"
-            className="bg-background py-8 sm:py-20 dark">
+            className="bg-[#1A1A1A] py-8 sm:py-20">
             <div className="mx-auto max-w-7xl space-y-16 px-6">
                 <div className="grid gap-12 md:grid-cols-5">
                     <div className="space-y-6 md:col-span-2 md:space-y-12">
@@ -57,7 +57,7 @@ export default function FooterSection() {
                             <Logo uniColor />
                         </Link>
 
-                        <p className="text-muted-foreground text-balance text-sm">Tailark is a platform for building AI-powered applications.</p>
+                        <p className="text-zinc-400 text-balance text-sm">Tailark is a platform for building AI-powered applications.</p>
                     </div>
 
                     <div className="col-span-3 grid gap-6 sm:grid-cols-3">
@@ -65,14 +65,14 @@ export default function FooterSection() {
                             <div
                                 key={index}
                                 className="space-y-4 text-sm">
-                                <span className="block font-medium">{link.group}</span>
+                                <span className="block font-medium text-white">{link.group}</span>
 
                                 <div className="flex flex-wrap gap-4 sm:flex-col">
                                     {link.items.map((item, index) => (
                                         <Link
                                             key={index}
                                             href={item.href}
-                                            className="text-muted-foreground hover:text-primary block duration-150">
+                                            className="text-zinc-400 hover:text-white block duration-150">
                                             <span>{item.title}</span>
                                         </Link>
                                     ))}
@@ -81,14 +81,14 @@ export default function FooterSection() {
                         ))}
 
                         <div className="space-y-4">
-                            <span className="block font-medium">Community</span>
+                            <span className="block font-medium text-white">Community</span>
                             <div className="flex flex-wrap gap-3 text-sm">
                                 <Link
                                     href="#"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="X/Twitter"
-                                    className="text-muted-foreground hover:text-primary block">
+                                    className="text-zinc-400 hover:text-white block">
                                     <svg
                                         className="size-5"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ export default function FooterSection() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="LinkedIn"
-                                    className="text-muted-foreground hover:text-primary block">
+                                    className="text-zinc-400 hover:text-white block">
                                     <svg
                                         className="size-5"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -123,17 +123,17 @@ export default function FooterSection() {
                 </div>
                 <div
                     aria-hidden
-                    className="h-px bg-[length:6px_1px] bg-repeat-x opacity-25 [background-image:linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)]"
+                    className="h-px bg-zinc-800"
                 />
                 <div className="flex flex-wrap justify-between gap-4">
-                    <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Tailark, All rights reserved </span>
+                    <span className="text-zinc-500 text-sm">© {new Date().getFullYear()} Tailark, All rights reserved </span>
 
-                    <div className="ring-foreground/5 bg-card flex items-center gap-2 rounded-full border border-transparent py-1 pl-2 pr-4 shadow ring-1">
+                    <div className="bg-zinc-900 flex items-center gap-2 rounded-full border border-zinc-800 py-1 pl-2 pr-4">
                         <div className="relative flex size-3">
-                            <span className="duration-1500 absolute inset-0 block size-full animate-pulse rounded-full bg-emerald-100"></span>
+                            <span className="duration-1500 absolute inset-0 block size-full animate-pulse rounded-full bg-emerald-900"></span>
                             <span className="relative m-auto block size-1 rounded-full bg-emerald-500"></span>
                         </div>
-                        <span className="text-sm">All Systems Normal</span>
+                        <span className="text-sm text-zinc-300">All Systems Normal</span>
                     </div>
                 </div>
             </div>

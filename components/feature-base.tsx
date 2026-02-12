@@ -4,7 +4,7 @@ import FeatureC from './feature-c';
 
 export default function FeatureBase() {
   return (
-    <div className='bg-[#FFFFFF] min-h-[600px] relative overflow-hidden'>
+    <div className='bg-[#FFFFFF] relative overflow-hidden'>
       <div className='absolute inset-0 bg-gradient-to-r from-purple-300/10 via-indigo-300/10 to-pink-300/10 [mask-image:linear-gradient(to_bottom,rgba(255,255,255,1)_75%,rgba(255,255,255,0))]' />
       <div className='relative'>
         {/* Top gradient blur glow */}

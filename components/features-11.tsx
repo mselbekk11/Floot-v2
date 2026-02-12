@@ -22,7 +22,7 @@ export default function FeaturesSectionEleven() {
               </div>
               <div className='mx-auto max-w-sm text-center'>
                 <h3 className='text-balance font-semibold text-white'>
-                  Powerful analytics dashboard
+                  Accept Payments
                 </h3>
                 <p className='text-muted-foreground mt-3'>
                   Track performance metrics with real-time data visualization
@@ -39,7 +39,7 @@ export default function FeaturesSectionEleven() {
               </div>
               <div className='relative z-10 mx-auto max-w-sm text-center'>
                 <h3 className='text-balance font-semibold text-white'>
-                  Streamlined invoicing system
+                  User Management
                 </h3>
                 <p className='text-muted-foreground mt-3'>
                   Generate, send, and manage professional invoices automatically
@@ -51,7 +51,7 @@ export default function FeaturesSectionEleven() {
             <div className='space-y-3'>
               <div className='flex items-center gap-2'>
                 <Zap className='text-white size-4' />
-                <h3 className='text-sm font-medium'>Faaast</h3>
+                <h3 className='text-sm font-medium text-white'>Backend & Database</h3>
               </div>
               <p className='text-muted-foreground text-sm'>
                 It supports an entire helping developers and innovate.
@@ -60,7 +60,7 @@ export default function FeaturesSectionEleven() {
             <div className='space-y-2'>
               <div className='flex items-center gap-2'>
                 <Cpu className='size-4 text-white' />
-                <h3 className='text-sm font-medium'>Powerful</h3>
+                <h3 className='text-sm font-medium text-white'>1 Click Hosting</h3>
               </div>
               <p className='text-muted-foreground text-sm'>
                 It supports an entire helping developers and businesses.
@@ -69,7 +69,7 @@ export default function FeaturesSectionEleven() {
             <div className='space-y-2'>
               <div className='flex items-center gap-2'>
                 <Lock className='text-white size-4' />
-                <h3 className='text-sm font-medium'>Security</h3>
+                <h3 className='text-sm font-medium text-white'>Monitoring</h3>
               </div>
               <p className='text-muted-foreground text-sm'>
                 An helping developers businesses innovate.
@@ -79,7 +79,7 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 <Sparkles className='text-white size-4' />
 
-                <h3 className='text-sm font-medium'>AI Powered</h3>
+                <h3 className='text-sm font-medium text-white'>Custom Domains</h3>
               </div>
               <p className='text-muted-foreground text-sm'>
                 Helping developers businesses innovate.
