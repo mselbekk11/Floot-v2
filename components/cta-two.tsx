@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 export default function CTATwo() {
   return (
-    <div className='rounded-xl  bg-[#232325] flex flex-col justify-center relative shadow-2xl shadow-black/80'>
+    <div className='rounded-xl  bg-[#232325] flex flex-col justify-center relative shadow-2xl shadow-black/80 z-80'>
       <div
         className='absolute inset-0 z-0'
         style={{

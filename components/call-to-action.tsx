@@ -48,16 +48,15 @@ const features = [
 
 export default function CallToAction() {
   return (
-    <section className='bg-[#F0EDFF] relative py-12 md:py-24 flex flex-col gap-24'>
-      <Image
-            src='/hue.svg'
-            width={1655}
-            height={341}
-            alt=''
-            className='pointer-events-none absolute z-50 w-full top-0 left-0'
-          />
+    <section className='bg-[#F0EDFF] relative overflow-hidden py-12 md:py-24 flex flex-col gap-24'>
+      {/* Top gradient blur glow */}
+      <div className='rotate-3 absolute -inset-x-12 -top-6 h-12 bg-gradient-to-r from-purple-400 via-indigo-300 to-pink-300 blur-3xl' />
+      {/* Gradient overlay with fade mask */}
+      <div className='absolute inset-0 bg-gradient-to-r from-purple-300/10 via-indigo-300/10 to-pink-300/10 [mask-image:linear-gradient(to_bottom,rgba(255,255,255,1)_75%,rgba(255,255,255,0))]' />
       <div className='mx-auto max-w-5xl'>
-      <h2 className='max-w-5xl mx-auto text-zinc-800 mb-14'>Everything you need</h2>
+        <h2 className='max-w-5xl mx-auto text-zinc-800 mb-14'>
+          Everything you need
+        </h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12'>
           {features.map((feature) => (
             <div key={feature.title} className='flex gap-4'>
@@ -76,10 +75,18 @@ export default function CallToAction() {
           ))}
         </div>
       </div>
-      <div className='mx-auto w-full max-w-6xl'>
+      <div className='relative mx-auto w-full max-w-6xl'>
         {/* <CTA /> */}
         <CTATwo />
+        {/* Hue glow bursting from beneath the CTA */}
       </div>
+      <Image
+        src='/hue.svg'
+        width={1655}
+        height={341}
+        alt=''
+        className='pointer-events-none absolute bottom-0 left-0 w-full scale-y-[-1]'
+      />
     </section>
   );
 }
