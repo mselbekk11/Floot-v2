@@ -24,8 +24,10 @@ const buttonVariants = cva(
         floot:
           'bg-[rgb(255,133,229)] text-black font-bricolage-grotesque font-semibold px-8! py-5! border-2 border-black',
         floottwo:
-          'bg-gradient-to-b from-[#9B17F7] via-[#510BDD] to-[#5C57EB] text-white font-bricolage-grotesque font-semibold rounded-sm ',
-        grey: 'bg-zinc-700 text-white text-sm px-4 py-1.5 rounded-sm',
+          'bg-gradient-to-b from-[#520DDE] via-[#4D2FE5] to-[#5C58EB] text-white font-bricolage-grotesque font-semibold rounded-sm px-4! ',
+        floothree:
+          'bg-gradient-to-b from-[#720DDE] via-[#872FE5] to-[#A958EB] text-white font-bricolage-grotesque font-semibold rounded-sm px-4! ',
+        grey: 'bg-zinc-800 text-white text-sm px-6! py-1.5 rounded-sm border border-zinc-700',
       },
       size: {
         default:

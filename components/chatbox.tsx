@@ -1,5 +1,8 @@
+"use client";
+
 import { Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
+import Bolt from './lottie/bolt';
 
 export default function Chatbox() {
   return (
@@ -12,6 +15,7 @@ export default function Chatbox() {
         />
         <Button variant='pinky' size='lg'>
           <Sparkles className='size-4' />
+          <Bolt mode='loop' size='w-5 h-5' />
           Generate
         </Button>
       </div>

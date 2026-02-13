@@ -41,7 +41,7 @@ export default function HeroSection() {
             }}
           /> */}
           <div className='relative z-10 mx-auto max-w-5xl px-6 text-center'>
-            <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl heading-serif z-20 relative'>
+            <h1 className='mx-auto max-w-3xl text-balance text-4xl font-semibold sm:text-5xl text-zinc-800 heading-serif z-20 relative'>
               Build powerful apps fast. <br /> without writing code.
             </h1>
 

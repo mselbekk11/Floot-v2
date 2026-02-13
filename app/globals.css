@@ -173,25 +173,6 @@
   --shadow-2xl: var(--shadow-2xl);
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-source-serif), Georgia, serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-p {
-  font-family: var(--font-bricolage-grotesque), sans-serif;
-}
-
-h2 {
-  font-family: var(--font-source-serif), Georgia, serif;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  font-size: 1.8rem;
-}
-
 @layer components {
   .heading-serif {
     font-family: var(--font-source-serif), Georgia, serif;
@@ -207,6 +188,22 @@ h2 {
 }
 
 @layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-source-serif), Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-family: var(--font-bricolage-grotesque), sans-serif;
+  }
+
   .texture-four {
     position: relative;
   }

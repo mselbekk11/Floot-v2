@@ -31,10 +31,10 @@ export default function NavTwo() {
   ];
   return (
     <div className='w-full bg-[#111111] texture-four'>
-      <div className='w-full flex items-center h-[50px] z-50 relative px-6'>
+      <div className='w-full flex items-center h-[50px] z-50 relative px-2'>
         {/* Logo - left */}
-        <div className='w-[200px] text-white flex items-center gap-2'>
-          <Image src='/logo.svg' alt='Floot' width={30} height={30} />
+        <div className='w-[200px] text-white flex items-center gap-1'>
+          <Image src='/logo-3.svg' alt='Floot' width={30} height={30} />
           <div className='text-white text-xl font-semibold heading-serif'>floot</div>
         </div>
 

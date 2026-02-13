@@ -44,6 +44,7 @@ const projects = [
 export default function Discover() {
   return (
     <div className='bg-[#232325] texture-four py-30'>
+      <div className='absolute inset-0 z-0' style={{ backgroundImage: 'url(/stars.png)', backgroundRepeat: 'repeat', backgroundSize: '500px', opacity: 0.6 }}></div>
       <div className='mx-auto max-w-7xl relative z-50'>
         <h2 className='text-white mb-8'>Discover apps</h2>
         {/* <p className='text-gray-400 text-sm'>Explore what others are building</p> */}
