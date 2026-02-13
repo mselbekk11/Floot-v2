@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 export default function CTA() {
   return (
-    <div className='rounded-xl  bg-[#ffffff] overflow-hidden grid grid-cols-1 md:grid-cols-[1fr_2fr]'>
+    <div className='rounded-xl  bg-white border border-zinc-200 overflow-hidden grid grid-cols-1 md:grid-cols-[1fr_2fr]'>
       <div className='relative'>
         <Image src='/globe.png' alt='' fill className='object-cover' />
       </div>

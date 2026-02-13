@@ -10,7 +10,7 @@ export default function FeaturesSectionEleven() {
       <h2 className='max-w-5xl mx-auto text-white mb-6'>Everything you need</h2>
       <div className='mx-auto w-full max-w-5xl px-6 xl:px-0 bg-[#17171A] rounded-md'>
         <div className='relative'>
-          <div className='border-[#5E5E65] *:nth-2:border-r-0 @max-4xl:*:nth-4:border-r-0 @max-4xl:*:nth-5:border-b-0 @max-4xl:*:first:border-r-0 @4xl:*:not-nth-2:border-b-0 *:nth-1:border-b! divide-[#5E5E65] @4xl:grid-cols-4 @4xl:*:p-8 relative grid grid-cols-2 divide-x divide-y overflow-hidden border *:p-4'>
+          <div className='border-[#3d3d3e] *:nth-2:border-r-0 @max-4xl:*:nth-4:border-r-0 @max-4xl:*:nth-5:border-b-0 @max-4xl:*:first:border-r-0 @4xl:*:not-nth-2:border-b-0 *:nth-1:border-b! divide-[#3d3d3e] @4xl:grid-cols-4 @4xl:*:p-8 relative grid grid-cols-2 divide-x divide-y overflow-hidden border *:p-4'>
             <div className='@4xl:col-span-2 col-span-full row-span-2 grid grid-rows-subgrid gap-8 !p-8'>
               <div className='max-w-84 mx-auto w-full self-center'>
                 {/* <InvoiceIllustration /> */}

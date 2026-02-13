@@ -5,6 +5,7 @@ import { LogoIcon } from '@/components/logo';
 import { Shield, HardDrive, Globe, Database, Zap, Lock } from 'lucide-react';
 import Image from 'next/image';
 import CTA from './cta';
+import CTATwo from './cta-two';
 
 const features = [
   {
@@ -47,7 +48,7 @@ const features = [
 
 export default function CallToAction() {
   return (
-    <section className='bg-[#ffffff] relative py-12 md:py-24 flex flex-col gap-24'>
+    <section className='bg-[#F0EDFF] relative py-12 md:py-24 flex flex-col gap-24'>
       <Image
             src='/hue.svg'
             width={1655}
@@ -76,7 +77,8 @@ export default function CallToAction() {
         </div>
       </div>
       <div className='mx-auto w-full max-w-5xl'>
-        <CTA />
+        {/* <CTA /> */}
+        <CTATwo />
       </div>
     </section>
   );

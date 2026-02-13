@@ -79,14 +79,14 @@ const projects = [
 
 export default function Discover() {
   return (
-    <div className='bg-[#232325] texture-four py-30'>
+    <div className='bg-[#232325] py-30 relative'>
       <div
         className='absolute inset-0 z-0'
         style={{
           backgroundImage: 'url(/stars.png)',
           backgroundRepeat: 'repeat',
           backgroundSize: '500px',
-          opacity: 0.6,
+          opacity: 0.4,
         }}
       ></div>
       {/* <div className='mx-auto max-w-7xl relative z-50'>
@@ -102,7 +102,7 @@ export default function Discover() {
           <ArrowRight className='size-4' />
         </Link>
       </div>
-      <div className='relative z-50 max-w-7xl mx-auto bg-[#17171A] p-8 border border-[#66666F] rounded-md'>
+      <div className='relative z-50 max-w-7xl mx-auto bg-[#17171A] p-8 border border-[#3d3d3e] rounded-md'>
         <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
             {projects.map((project) => (
