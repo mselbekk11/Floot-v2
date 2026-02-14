@@ -11,6 +11,7 @@ import { AnimatedPromptTextarea } from './animated-prompt-textarea';
 import Chatbox from './chatbox';
 import ChatboxTwo from './chatbox-two';
 import Bolt from './lottie/bolt';
+import AttachFileButton from './attach-file-button';
 import Image from 'next/image';
 
 export default function HeroSection() {
@@ -68,7 +69,9 @@ export default function HeroSection() {
                 <PromptInput className='divide-y-0'>
                   <AnimatedPromptTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>
-                    <PromptInputTools />
+                    <PromptInputTools>
+                      <AttachFileButton />
+                    </PromptInputTools>
                     <PromptInputSubmit>
                       <Bolt
                         mode='loop'
