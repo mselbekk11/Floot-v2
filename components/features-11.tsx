@@ -3,9 +3,9 @@ import { Zap, Sparkles, Lock, Cpu } from 'lucide-react';
 import { InvoiceIllustration } from '@/components/ui/illustrations/invoice-illustration';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import Monitoring from '@/public/monitoring.svg'
-import Database from '@/public/database.svg'
-import OneClick from '@/public/one-click.svg'
+import Monitoring from '@/public/monitoring.svg';
+import Database from '@/public/database.svg';
+import OneClick from '@/public/one-click.svg';
 
 export default function FeaturesSectionEleven() {
   return (
@@ -27,8 +27,8 @@ export default function FeaturesSectionEleven() {
               <div className='mx-auto max-w-sm text-center'>
                 <h3 className=' text-white text-xl'>Accept Payments</h3>
                 <p className='text-zinc-400 mt-3 text-sm'>
-                  Track performance metrics with real-time data visualization
-                  and customizable reports for.
+                  Start charging for your products or services instantly
+                  <br /> with secure, built-in payment tools.
                 </p>
               </div>
             </div>
@@ -45,8 +45,9 @@ export default function FeaturesSectionEleven() {
               <div className='relative z-10 mx-auto max-w-sm text-center'>
                 <h3 className=' text-white text-xl'>User Management</h3>
                 <p className='text-zinc-400 mt-3 text-sm'>
-                  Track performance metrics with real-time data visualization
-                  and customizable reports for.
+                  Easily add customers, team members, or members
+                  <br />
+                  to your app in just a few clicks.
                 </p>
               </div>
             </div>
@@ -55,46 +56,45 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 {/* <Zap className='text-white size-4' /> */}
                 <Image src={Database} alt='Monitoring' width={20} height={20} />
-                <h3 className='text-md text-white'>
-                  Backend & Database
-                </h3>
+                <h3 className='text-md text-white'>Backend & Database</h3>
               </div>
               <p className='text-zinc-400 text-sm'>
-                It supports an entire helping developers and innovate.
+                Comes with a secure backend & database built in
               </p>
             </div>
             <div className='space-y-2'>
               <div className='flex items-center gap-2'>
                 {/* <Cpu className='size-4 text-white' /> */}
                 <Image src={OneClick} alt='Monitoring' width={20} height={20} />
-                <h3 className='text-md text-white'>
-                  1 Click Hosting
-                </h3>
+                <h3 className='text-md text-white'>1 Click Hosting</h3>
               </div>
               <p className='text-zinc-400 text-sm'>
-                It supports an entire helping developers and businesses.
+                Launch your app to the world with a single click
               </p>
             </div>
             <div className='space-y-2'>
               <div className='flex items-center gap-2'>
                 {/* <Lock className='text-white size-4' /> */}
-                <Image src={Monitoring} alt='Monitoring' width={20} height={20} />
+                <Image
+                  src={Monitoring}
+                  alt='Monitoring'
+                  width={20}
+                  height={20}
+                />
                 <h3 className='text-md text-white'>Monitoring</h3>
               </div>
               <p className='text-zinc-400 text-sm'>
-                An helping developers businesses innovate.
+                Floot keeps an eye on your app, detecting issues 24/7
               </p>
             </div>
             <div className='space-y-2'>
               <div className='flex items-center gap-2'>
                 <Sparkles className='text-white size-4' />
 
-                <h3 className='text-md text-white'>
-                  Custom Domains
-                </h3>
+                <h3 className='text-md text-white'>Custom Domains</h3>
               </div>
               <p className='text-zinc-400 text-sm'>
-                Helping developers businesses innovate.
+                Connect your very own domain in minutes
               </p>
             </div>
           </div>

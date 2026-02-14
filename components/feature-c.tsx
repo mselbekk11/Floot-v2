@@ -14,10 +14,14 @@ export default function FeatureC() {
             <div className='flex flex-col gap-2 relative'>
               <h2 className=' text-zinc-800'>Never Get Stuck</h2>
               <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
-                For builders who need compute that keeps up with their ideas,
-                Fly Machines are hardware-virtualized containers that launch
-                instantly and run only when you need them. Deploy an app in
-                minutes or run untrusted code in isolated sandboxes.
+                If there’s an error, Floot detects it and fixes it
+                automatically. If something isn’t connected properly, it
+                resolves it behind the scenes.
+              </p>
+              <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
+                And if you ever want real human help, we’re right there. Chat
+                with us. We’ll
+                guide you step by step until your app is exactly what you need.
               </p>
             </div>
             <div>

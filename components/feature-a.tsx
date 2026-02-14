@@ -12,24 +12,28 @@ export default function FeatureA() {
         <div className='lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-start'>
           <div className='flex flex-col gap-8 relative'>
             <div className='flex flex-col gap-2 relative'>
-                <h2 className='text-zinc-800 z-80'>Just Chat to Build</h2>
+              <h2 className='text-zinc-800 z-80'>Just Chat to Build</h2>
               <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
-                For builders who need compute that keeps up with their ideas,
-                Fly Machines are hardware-virtualized containers that launch
-                instantly and run only when you need them. Deploy an app in
-                minutes or run untrusted code in isolated sandboxes.
+                You don’t need to know how to code. You don’t need to hire a
+                developer. You don’t even need to know what “tech stack” means.
+                Just describe what you want.
+              </p>
+              <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
+                “I need a simple app to track job sites.” “I want a booking
+                system for my salon.” “I need a tool to manage inventory for my
+                crew.”
               </p>
             </div>
             <div>
               {/* Decorative bottom line */}
               {/* <div className='hidden lg:block w-full h-px bottom-0 bg-gradient-to-r from-[#1A1A1A] via-[#232325] via-10% to-transparent ' /> */}
               <Image
-                  src='/stripe.svg'
-                  width={150}
-                  height={50}
-                  alt=''
-                  className='pointer-events-none '
-                />
+                src='/stripe.svg'
+                width={150}
+                height={50}
+                alt=''
+                className='pointer-events-none '
+              />
             </div>
           </div>
           <Image

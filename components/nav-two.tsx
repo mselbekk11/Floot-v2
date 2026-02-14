@@ -1,36 +1,21 @@
+'use client';
+
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from './ui/button';
+import MobileDrawer from './mobile-drawer';
+
+const links = [
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'About', href: '/about' },
+  { label: 'faqs', href: '/faqs' },
+  { label: 'Docs', href: '/docs' },
+];
 
 export default function NavTwo() {
-  const links = [
-    {
-      label: 'Pricing',
-      href: '/pricing',
-      index: 0,
-    },
-    {
-      label: 'Gallery',
-      href: '/gallery',
-      index: 1,
-    },
-    {
-      label: 'About',
-      href: '/about',
-      index: 2,
-    },
-    {
-      label: 'faqs',
-      href: '/faqs',
-      index: 3,
-    },
-    {
-      label: 'Docs',
-      href: '/docs',
-      index: 4,
-    },
-  ];
   return (
-    <div className='w-full bg-[#1A1A1A] sticky top-0 z-90 shadow-2xl shadow-black/80'>
+    <div className='w-full bg-[#1A1A1A] sticky top-0 z-20 shadow-2xl shadow-black/80'>
       <div className='w-full flex items-center h-[50px] z-50 relative px-2'>
         {/* Logo - left */}
         <div className='w-[200px] text-white flex items-center gap-1'>
@@ -40,29 +25,45 @@ export default function NavTwo() {
           </div>
         </div>
 
-        {/* Nav links - center */}
-        <div className='flex-1 flex justify-center items-center gap-6'>
+        {/* Desktop nav links - center */}
+        <div className='hidden md:flex flex-1 justify-center items-center gap-6'>
           {links.map((link) => (
-            <div
-              key={link.index}
-              className='text-white text-sm font-bricolage-grotesque font-light hover:text-zinc-300 duration-300 cursor-pointer'
+            <Link
+              key={link.href}
+              href={link.href}
+              className='text-white text-sm font-bricolage-grotesque font-light hover:text-zinc-300 duration-300'
             >
               {link.label}
-            </div>
+            </Link>
           ))}
         </div>
 
-        {/* Buttons - right */}
-        <div className='w-[200px] flex items-center justify-end gap-2'>
-          {/* <div className='bg-zinc-800 text-white text-sm px-4 py-1.5 rounded-sm'>
-            Login
-          </div> */}
+        {/* Desktop buttons - right */}
+        <div className='hidden md:flex w-[200px] items-center justify-end gap-2'>
           <Button variant='grey'>Login</Button>
-          {/* <div className='bg-[#FF85E5] text-sm px-4 py-1.5 rounded-sm'>
-            Start Building
-          </div> */}
           <Button variant='floottwo'>Start Building</Button>
         </div>
+
+        {/* Mobile hamburger - right */}
+        <div className='flex md:hidden flex-1 justify-end'>
+          <MobileDrawer />
+        </div>
+
+        {/* Old Sheet sidebar (commented out)
+        <div className='flex md:hidden flex-1 justify-end'>
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <button aria-label='Open menu'>
+                <Menu className='text-white size-6' />
+              </button>
+            </SheetTrigger>
+            <SheetContent side='left' className='w-80 bg-[#1A1A1A] border-zinc-800 p-0' showCloseButton={false}>
+              <SheetTitle className='sr-only'>Navigation Menu</SheetTitle>
+              ...
+            </SheetContent>
+          </Sheet>
+        </div>
+        */}
       </div>
     </div>
   );

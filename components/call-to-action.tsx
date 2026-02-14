@@ -6,60 +6,60 @@ import { Shield, HardDrive, Globe, Database, Zap, Lock } from 'lucide-react';
 import Image from 'next/image';
 import CTA from './cta';
 import CTATwo from './cta-two';
-import AutoScale from '@/public/autoscaling.svg'
-import Backups from '@/public/backups.svg'
-import Domains from '@/public/domains.svg'
-import FastLoading from '@/public/fast-loading.svg'
-import Secure from '@/public/secure.svg'
-import Support from '@/public/support.svg'
+import AutoScale from '@/public/autoscaling.svg';
+import Backups from '@/public/backups.svg';
+import Domains from '@/public/domains.svg';
+import FastLoading from '@/public/fast-loading.svg';
+import Secure from '@/public/secure.svg';
+import Support from '@/public/support.svg';
 
 const features = [
   {
     icon: AutoScale,
     title: 'AutoScaling',
     description:
-      'No complex configurations or IAM policies. Your apps communicate securely on private networks with zero configuration.',
+      'Your app automatically scales up as your traffic grows, so it keeps running smoothly no matter how busy you get.',
   },
   {
     icon: Backups,
     title: 'Automatic Backups',
     description:
-      'Volumes are encrypted with keys stored in redundant industry-proven secret storage systems. Automatic encryption with zero effort.',
+      'We automatically back up your data, so your work is always safe and never lost.',
   },
   {
     icon: FastLoading,
     title: 'Fast Loading WorldWide',
     description:
-      'S3-compatible object storage with automatic global reach. It intelligently routes data to fit read patterns, minimizing latency.',
+      'Your app loads quickly anywhere in the world, giving every user a smooth, responsive experience.',
   },
   {
     icon: Secure,
     title: 'Secure Connections',
     description:
-      'A full menu of managed services running on our infrastructure right next to your app, keeping latency low and you productive.',
+      'Every app comes with built-in security and encrypted connections to keep your data and users protected.',
   },
   {
     icon: Domains,
     title: 'Use your own domains',
     description:
-      'Deploy your applications in seconds with zero-downtime releases. Scale up or down automatically based on demand.',
+      'Connect your own domain and create a fully branded experience that feels like your business from day one.',
   },
   {
     icon: Support,
     title: 'Live Support',
     description:
-      'Secure user authentication out of the box with support for OAuth, SSO, and custom providers. No third-party services needed.',
+      'Get real human help whenever you need it, with live chat and calls to guide you through any challenge.',
   },
 ];
 
 export default function CallToAction() {
   return (
-    <section className='bg-[#F0EDFF] relative overflow-hidden py-12 md:py-24 flex flex-col gap-24'>
+    <section className='bg-white relative overflow-hidden py-12 md:py-24 flex flex-col gap-24'>
       {/* Top gradient blur glow */}
       <div className='rotate-3 absolute -inset-x-12 -top-6 h-12 bg-gradient-to-r from-purple-400 via-indigo-300 to-pink-300 blur-3xl' />
       {/* Gradient overlay with fade mask */}
       <div className='absolute inset-0 bg-gradient-to-r from-purple-300/10 via-indigo-300/10 to-pink-300/10 [mask-image:linear-gradient(to_bottom,rgba(255,255,255,1)_75%,rgba(255,255,255,0))]' />
-      <div className='mx-auto max-w-5xl'>
+      <div className='mx-auto max-w-5xl relative z-90'>
         <h2 className='max-w-5xl mx-auto text-zinc-800 mb-14'>
           And much more...
         </h2>
@@ -68,7 +68,12 @@ export default function CallToAction() {
             <div key={feature.title} className='flex gap-4'>
               <div className='shrink-0 flex items-center justify-center size-12 rounded-lg bg-purple-800/10'>
                 {/* <feature.icon className='size-5 text-black/80' /> */}
-                <Image src={feature.icon} alt={feature.title} width={25} height={20} />
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={25}
+                  height={20}
+                />
               </div>
               <div>
                 <h3 className='text-black font-semibold text-lg'>
