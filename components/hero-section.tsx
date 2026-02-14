@@ -57,7 +57,7 @@ export default function HeroSection() {
               writing code.
             </h1>
 
-            <p className='text-muted-foreground mx-auto mb-7 mt-4 max-w-xl text-sm md:text-lg'>
+            <p className='text-[#5f6470] mx-auto mb-7 mt-4 max-w-xl text-sm md:text-lg'>
             Create stunning apps & websites by chatting with AI.
             </p>
 

@@ -41,6 +41,7 @@ export function AnimatedPromptTextarea({ onChange, className, ...props }: Animat
         {...props}
         className={className}
         placeholder=''
+        aria-label='Describe what you want to build'
         onChange={handleChange}
       />
     </div>

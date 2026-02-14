@@ -6,11 +6,11 @@ import { Button } from './ui/button';
 import MobileDrawer from './mobile-drawer';
 
 const links = [
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Gallery', href: '/gallery' },
-  { label: 'About', href: '/about' },
-  { label: 'Faqs', href: '/faqs' },
-  { label: 'Docs', href: '/docs' },
+  { label: 'Pricing', href: '/', id: 'pricing' },
+  { label: 'Gallery', href: '/', id: 'gallery' },
+  { label: 'About', href: '/', id: 'about' },
+  { label: 'Faqs', href: '/', id: 'faqs' },
+  { label: 'Docs', href: '/', id: 'docs' },
 ];
 
 export default function NavTwo() {
@@ -29,7 +29,7 @@ export default function NavTwo() {
         <div className='hidden md:flex flex-1 justify-center items-center gap-6'>
           {links.map((link) => (
             <Link
-              key={link.href}
+              key={link.id}
               href={link.href}
               className='text-white text-sm font-bricolage-grotesque font-light hover:text-zinc-300 duration-300'
             >
