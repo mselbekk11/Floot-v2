@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
@@ -11,12 +11,21 @@ const links = [
   { label: 'Pricing', href: '/', id: 'pricing' },
   { label: 'Gallery', href: '/', id: 'gallery' },
   { label: 'About', href: '/', id: 'about' },
-  { label: 'faqs', href: '/', id: 'faqs' },
+  { label: 'Faqs', href: '/', id: 'faqs' },
   { label: 'Docs', href: '/', id: 'docs' },
 ];
 
 export default function MobileDrawer() {
   const [open, setOpen] = useState(false);
+  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
+
+  if (!mounted) {
+    return (
+      <button aria-label='Open menu'>
+        <Menu className='text-white size-6' />
+      </button>
+    );
+  }
 
   return (
     <Drawer direction='left' open={open} onOpenChange={setOpen}>
