@@ -3,15 +3,15 @@ import Image from 'next/image';
 export default function FeatureB() {
   return (
     <section className='relative'>
-      <div className='relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-center'>
+      <div className='relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-center'>
         <Image
           src='/editor-2.png'
           width={350}
           height={400}
           alt=''
-          className='mx-auto mb-6 lg:mb-0'
+          className='mx-auto mb-6 lg:mb-0 order-2 lg:order-1'
         />
-        <div className='flex flex-col gap-8 relative'>
+        <div className='flex flex-col gap-8 relative order-1 lg:order-2'>
           <div className='flex flex-col gap-2 relative'>
             <h2 className=' text-zinc-800'>Easy to use Editor</h2>
             <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>

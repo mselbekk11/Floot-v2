@@ -79,7 +79,7 @@ const projects = [
 
 export default function Discover() {
   return (
-    <div className='bg-[#232325] py-30 relative'>
+    <div className='bg-[#232325] py-16 md:py-30 relative'>
       <div
         className='absolute inset-0 z-0'
         style={{
@@ -92,57 +92,61 @@ export default function Discover() {
       {/* <div className='mx-auto max-w-7xl relative z-50'>
         <h2 className='text-white mb-8'>Discover apps</h2>
       </div> */}
-      <div className='mx-auto max-w-7xl relative z-50 flex justify-between items-center'>
-        <h2 className='text-white mb-6 z-80'>Discover apps</h2>
-        <Link
-          href='/'
-          className='text-white text-sm hover:underline flex items-center gap-1'
-        >
-          View all
-          <ArrowRight className='size-4' />
-        </Link>
-      </div>
-      <div className='relative z-50 max-w-7xl mx-auto bg-[#17171A] p-8 border border-[#3d3d3e] rounded-md'>
-        <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
-            {projects.map((project) => (
-              <a
-                key={project.id}
-                href={project.link}
-                className='group flex flex-col gap-4'
-              >
-                {/* Image */}
-                <div className='relative w-full rounded-md p-2 bg-zinc-800'>
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={300}
-                    height={300}
-                    className=''
-                  />
-                </div>
+      <div className='px-4'>
+        <div className='mx-auto max-w-7xl relative z-50 flex justify-between items-center mb-4'>
+          <h2 className='text-white z-80 heading-serif text-xl md:text-2xl'>
+            Discover apps
+          </h2>
+          <Link
+            href='/'
+            className='text-white text-sm hover:underline flex items-center gap-1'
+          >
+            View all
+            <ArrowRight className='size-4' />
+          </Link>
+        </div>
+        <div className='relative z-50 max-w-7xl mx-auto bg-[#17171A] p-8 border border-[#3d3d3e] rounded-md'>
+          <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
+              {projects.map((project) => (
+                <a
+                  key={project.id}
+                  href={project.link}
+                  className='group flex flex-col gap-4'
+                >
+                  {/* Image */}
+                  <div className='relative w-full rounded-md p-2 bg-zinc-800'>
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={300}
+                      height={300}
+                      className='w-full md:w-auto'
+                    />
+                  </div>
 
-                {/* Info section */}
-                <div className='flex flex-col gap-1'>
-                  {/* Row 1: Title + Heart */}
-                  <div className='flex items-center justify-between'>
-                    <p className='text-white text-sm font-medium truncate'>
-                      {project.title}
-                    </p>
-                    <Heart className='size-4 text-purple-600 fill-purple-600 shrink-0' />
+                  {/* Info section */}
+                  <div className='flex flex-col gap-1'>
+                    {/* Row 1: Title + Heart */}
+                    <div className='flex items-center justify-between'>
+                      <p className='text-white text-sm font-medium truncate'>
+                        {project.title}
+                      </p>
+                      <Heart className='size-4 text-purple-600 fill-purple-600 shrink-0' />
+                    </div>
+                    {/* Row 2: Description + Number */}
+                    <div className='flex items-center justify-between'>
+                      <p className='text-gray-400 text-xs truncate'>
+                        {project.description}
+                      </p>
+                      <span className='text-gray-400 text-xs shrink-0'>
+                        {project.likes}
+                      </span>
+                    </div>
                   </div>
-                  {/* Row 2: Description + Number */}
-                  <div className='flex items-center justify-between'>
-                    <p className='text-gray-400 text-xs truncate'>
-                      {project.description}
-                    </p>
-                    <span className='text-gray-400 text-xs shrink-0'>
-                      {project.likes}
-                    </span>
-                  </div>
-                </div>
-              </a>
-            ))}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -47,8 +47,8 @@ const links = [
 export default function FooterTwo() {
   return (
     <footer role='contentinfo' className='bg-zinc-800 px-4 py-4'>
-      <div className='mx-auto rounded-md border border-[#3d3d3e] bg-[#17171A] p-8 sm:p-12'>
-        <div className='flex flex-col gap-12 lg:flex-row lg:gap-50'>
+      <div className='mx-auto rounded-md border border-[#3d3d3e] bg-[#17171A] p-4 md:p-8 sm:p-12'>
+        <div className='flex flex-col gap-8 lg:flex-row lg:gap-50'>
           {/* Logo column */}
           <div className='shrink-0 flex gap-1'>
             <Link href='/' aria-label='go home'>

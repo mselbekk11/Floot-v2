@@ -207,18 +207,18 @@
 @layer base {
   h1,
   h2,
-  h3 {
+  /* h3 {
     font-family: var(--font-source-serif), Georgia, serif;
     font-weight: 600;
     letter-spacing: -0.02em;
-  }
+  } */
 
   h1 {
     font-size: 1.6rem;
   }
 
   h2 {
-    font-size: 1.6rem;
+    
   }
 
   p {

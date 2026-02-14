@@ -9,9 +9,11 @@ import OneClick from '@/public/one-click.svg';
 
 export default function FeaturesSectionEleven() {
   return (
-    <section className='py-24 z-50 relative'>
-      <h2 className='max-w-5xl mx-auto text-white mb-6'>Everything you need</h2>
-      <div className='mx-auto w-full max-w-5xl px-6 xl:px-0 bg-[#17171A] rounded-md'>
+    <section className='py-12 md:py-24 z-50 relative px-4'>
+      <h2 className='max-w-5xl mx-auto mb-4 text-white z-80 heading-serif text-xl md:text-2xl'>
+        Everything you need
+      </h2>
+      <div className='mx-auto w-full max-w-5xl xl:px-0 bg-[#17171A] rounded-md'>
         <div className='relative'>
           <div className='border-[#3d3d3e] *:nth-2:border-r-0 @max-4xl:*:nth-4:border-r-0 @max-4xl:*:nth-5:border-b-0 @max-4xl:*:first:border-r-0 @4xl:*:not-nth-2:border-b-0 *:nth-1:border-b! divide-[#3d3d3e] @4xl:grid-cols-4 @4xl:*:p-8 relative grid grid-cols-2 divide-x divide-y overflow-hidden border *:p-4'>
             <div className='@4xl:col-span-2 col-span-full row-span-2 grid grid-rows-subgrid gap-4 !p-8'>
@@ -25,8 +27,10 @@ export default function FeaturesSectionEleven() {
                 />
               </div>
               <div className='mx-auto max-w-sm text-center'>
-                <h3 className=' text-white text-xl'>Accept Payments</h3>
-                <p className='text-zinc-400 mt-3 text-sm'>
+                <h3 className=' text-white heading-serif text-lg md:text-xl'>
+                  Accept Payments
+                </h3>
+                <p className='text-zinc-400 mt-3 text-xs md:text-sm'>
                   Start charging for your products or services instantly
                   <br /> with secure, built-in payment tools.
                 </p>
@@ -43,8 +47,10 @@ export default function FeaturesSectionEleven() {
                 />
               </div>
               <div className='relative z-10 mx-auto max-w-sm text-center'>
-                <h3 className=' text-white text-xl'>User Management</h3>
-                <p className='text-zinc-400 mt-3 text-sm'>
+                <h3 className=' text-white text-lg md:text-xl'>
+                  User Management
+                </h3>
+                <p className='text-zinc-400 mt-3 text-xs md:text-sm'>
                   Easily add customers, team members, or members
                   <br />
                   to your app in just a few clicks.
@@ -56,9 +62,11 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 {/* <Zap className='text-white size-4' /> */}
                 <Image src={Database} alt='Monitoring' width={20} height={20} />
-                <h3 className='text-md text-white'>Backend & Database</h3>
+                <h3 className='text-sm md:text-md text-white'>
+                  Backend & Database
+                </h3>
               </div>
-              <p className='text-zinc-400 text-sm'>
+              <p className='text-zinc-400 text-xs md:text-sm'>
                 Comes with a secure backend & database built in
               </p>
             </div>
@@ -66,9 +74,11 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 {/* <Cpu className='size-4 text-white' /> */}
                 <Image src={OneClick} alt='Monitoring' width={20} height={20} />
-                <h3 className='text-md text-white'>1 Click Hosting</h3>
+                <h3 className='text-sm md:text-md text-white'>
+                  1 Click Hosting
+                </h3>
               </div>
-              <p className='text-zinc-400 text-sm'>
+              <p className='text-zinc-400 text-xs md:text-sm'>
                 Launch your app to the world with a single click
               </p>
             </div>
@@ -81,9 +91,9 @@ export default function FeaturesSectionEleven() {
                   width={20}
                   height={20}
                 />
-                <h3 className='text-md text-white'>Monitoring</h3>
+                <h3 className='text-sm md:text-md text-white'>Monitoring</h3>
               </div>
-              <p className='text-zinc-400 text-sm'>
+              <p className='text-zinc-400 text-xs md:text-sm'>
                 Floot keeps an eye on your app, detecting issues 24/7
               </p>
             </div>
@@ -91,9 +101,11 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 <Sparkles className='text-white size-4' />
 
-                <h3 className='text-md text-white'>Custom Domains</h3>
+                <h3 className='text-sm md:text-md text-white'>
+                  Custom Domains
+                </h3>
               </div>
-              <p className='text-zinc-400 text-sm'>
+              <p className='text-zinc-400 text-xs md:text-sm'>
                 Connect your very own domain in minutes
               </p>
             </div>

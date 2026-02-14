@@ -8,7 +8,7 @@ export default function FeatureA() {
       {/* Gradient overlay with fade mask */}
       <div className='absolute inset-0 bg-gradient-to-r from-purple-300/10 via-indigo-300/10 to-pink-300/10 [mask-image:linear-gradient(to_bottom,rgba(255,255,255,1)_75%,rgba(255,255,255,0))]' />
 
-      <div className='relative max-w-5xl mx-auto py-24 xl:py-24 px-4 sm:px-6 lg:px-8 grid gap-20 items-center'>
+      <div className='relative max-w-5xl mx-auto pt-12 md:pt-24 pb-12 px-4 sm:px-6 lg:px-8 grid gap-20 items-center'>
         <div className='lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-start'>
           <div className='flex flex-col gap-8 relative'>
             <div className='flex flex-col gap-2 relative'>
