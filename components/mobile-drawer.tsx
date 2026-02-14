@@ -30,7 +30,7 @@ export default function MobileDrawer() {
         <div className=''>
           <div className='flex flex-col h-[50px] justify-center px-4 border-b border-white/10'>
             <div className='w-[200px] text-white flex items-center gap-1'>
-              <Image src='/logo-3.svg' alt='Floot' width={30} height={30} />
+              <Image src='/logo-pink.svg' alt='Floot' width={25} height={25} />
               <div className='text-white text-xl font-semibold heading-serif'>
                 floot
               </div>

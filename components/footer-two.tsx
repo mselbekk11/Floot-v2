@@ -51,10 +51,19 @@ export default function FooterTwo() {
         <div className='flex flex-col gap-8 lg:flex-row lg:gap-50'>
           {/* Logo column */}
           <div className='shrink-0 flex gap-1'>
-            <Link href='/' aria-label='go home'>
-              <Image src='/logo-3.svg' alt='Floot' width={30} height={30} />
-            </Link>
-            <div className='text-white text-xl font-semibold heading-serif'>floot</div>
+            <div className='flex gap-2 justify-center'>
+              <Link href='/' aria-label='go home'>
+                <Image
+                  src='/logo-pink.svg'
+                  alt='Floot'
+                  width={25}
+                  height={25}
+                />
+              </Link>
+              <div className='text-white text-xl font-semibold heading-serif'>
+                floot
+              </div>
+            </div>
           </div>
 
           {/* Link columns */}
