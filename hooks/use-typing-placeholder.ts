@@ -32,7 +32,7 @@ export function useTypingPlaceholder(options: UseTypingPlaceholderOptions = {}) 
   const sentenceIndex = useRef(0)
   const charIndex = useRef(0)
   const isDeleting = useRef(false)
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>()
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null)
 
   const stop = useCallback(() => {
     setIsActive(false)
