@@ -14,9 +14,11 @@ export default function CTATwo() {
         }}
       ></div>
       <div className=' px-4 py-10 md:px-12 text-center relative z-50'>
-        <h2 className=' text-white text-3xl'>Ready to start building?</h2>
+        <h2 className=' text-white text-3xl heading-serif '>
+          Ready to start building?
+        </h2>
         <p className='text-white mt-4 text-md font-bricolage-grotesque'>
-        Start for free today — no credit card required.
+          Start for free today — no credit card required.
         </p>
         <div className='mt-6'>
           <Button variant='floottwo' asChild>

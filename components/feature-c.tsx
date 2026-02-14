@@ -12,7 +12,9 @@ export default function FeatureC() {
         <div className='lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-start'>
           <div className='flex flex-col gap-8'>
             <div className='flex flex-col gap-2'>
-              <h2 className=' text-zinc-800'>Never Get Stuck</h2>
+              <h2 className=' text-zinc-800 heading-serif text-xl md:text-2xl'>
+                Never Get Stuck
+              </h2>
               <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
                 If there’s an error, Floot detects it and fixes it
                 automatically. If something isn’t connected properly, it

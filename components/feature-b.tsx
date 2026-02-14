@@ -13,15 +13,17 @@ export default function FeatureB() {
         />
         <div className='flex flex-col gap-8 relative order-1 lg:order-2'>
           <div className='flex flex-col gap-2 relative'>
-            <h2 className=' text-zinc-800'>Easy to use Editor</h2>
+            <h2 className=' text-zinc-800 heading-serif text-xl md:text-2xl'>
+              Easy to use Editor
+            </h2>
             <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
               Sometimes you want to tweak things visually. Move a button. Change
-              a headline. Add a new section. Adjust how something looks. 
+              a headline. Add a new section. Adjust how something looks.
             </p>
             <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
-              With Floot’s editor, you
-              just point and show. Circle what you want changed. Highlight text to rewrite it. Type a
-              quick note like “make this bigger” or “add a photo here.”
+              With Floot’s editor, you just point and show. Circle what you want
+              changed. Highlight text to rewrite it. Type a quick note like
+              “make this bigger” or “add a photo here.”
             </p>
           </div>
           <div>

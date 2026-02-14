@@ -47,7 +47,7 @@ export default function FeaturesSectionEleven() {
                 />
               </div>
               <div className='relative z-10 mx-auto max-w-sm text-center'>
-                <h3 className=' text-white text-lg md:text-xl'>
+                <h3 className=' text-white text-lg md:text-xl heading-serif '>
                   User Management
                 </h3>
                 <p className='text-zinc-400 mt-3 text-xs md:text-sm'>
@@ -62,7 +62,7 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 {/* <Zap className='text-white size-4' /> */}
                 <Image src={Database} alt='Monitoring' width={20} height={20} />
-                <h3 className='text-sm md:text-md text-white'>
+                <h3 className='text-sm md:text-md text-white heading-serif '>
                   Backend & Database
                 </h3>
               </div>
@@ -74,7 +74,7 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 {/* <Cpu className='size-4 text-white' /> */}
                 <Image src={OneClick} alt='Monitoring' width={20} height={20} />
-                <h3 className='text-sm md:text-md text-white'>
+                <h3 className='text-sm md:text-md text-white heading-serif '>
                   1 Click Hosting
                 </h3>
               </div>
@@ -91,7 +91,7 @@ export default function FeaturesSectionEleven() {
                   width={20}
                   height={20}
                 />
-                <h3 className='text-sm md:text-md text-white'>Monitoring</h3>
+                <h3 className='text-sm md:text-md text-white heading-serif '>Monitoring</h3>
               </div>
               <p className='text-zinc-400 text-xs md:text-sm'>
                 Floot keeps an eye on your app, detecting issues 24/7
@@ -101,7 +101,7 @@ export default function FeaturesSectionEleven() {
               <div className='flex items-center gap-2'>
                 <Sparkles className='text-white size-4' />
 
-                <h3 className='text-sm md:text-md text-white'>
+                <h3 className='text-sm md:text-md text-white heading-serif '>
                   Custom Domains
                 </h3>
               </div>

@@ -12,7 +12,7 @@ export default function FeatureA() {
         <div className='lg:grid grid-cols-2 gap-x-8 xl:gap-x-16 items-start'>
           <div className='flex flex-col gap-8 relative'>
             <div className='flex flex-col gap-2 relative'>
-              <h2 className='text-zinc-800 z-80'>Just Chat to Build</h2>
+              <h2 className='text-zinc-800 z-80 heading-serif text-xl md:text-2xl'>Just Chat to Build</h2>
               <p className='font-bricolage-grotesque font-regular text-md text-gray-500'>
                 You don’t need to know how to code. You don’t need to hire a
                 developer. You don’t even need to know what “tech stack” means.
