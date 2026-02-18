@@ -21,3 +21,5 @@ border-b border-zinc-300
 
 
 max-w-[1240px]
+
+text-[#818181]

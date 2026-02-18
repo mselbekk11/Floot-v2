@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import MobileDrawer from './mobile-drawer';
+import { useEffect, useState } from 'react';
 
 const links = [
   { label: 'Pricing', href: '/', id: 'pricing' },
@@ -14,9 +15,25 @@ const links = [
 ];
 
 export default function NavThree() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className='fixed top-0 left-0 right-0 z-60 pt-4 px-4'>
-      <div className='mx-auto max-w-[1240px] bg-white/50 backdrop-blur-md rounded-full border border-gray-200/60 shadow-md'>
+      <div
+        className={`mx-auto max-w-[1240px] rounded-full transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/50 backdrop-blur-md border border-gray-200/60 shadow-md'
+            : 'border border-transparent'
+        }`}
+      >
         <div className='flex items-center h-[50px] px-2'>
           {/* Logo - left */}
           <div className='w-[200px] flex items-center gap-1'>
@@ -32,7 +49,7 @@ export default function NavThree() {
               <Link
                 key={link.id}
                 href={link.href}
-                className='text-[#818181] text-sm font-bricolage-grotesque font-semibold hover:text-zinc-800 duration-300'
+                className='text-zinc-600 text-sm font-bricolage-grotesque font-medium hover:text-zinc-800 duration-300'
               >
                 {link.label}
               </Link>

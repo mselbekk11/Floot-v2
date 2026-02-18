@@ -1,14 +1,6 @@
 'use client';
 
-import {
-  PromptInput,
-  PromptInputToolbar,
-  PromptInputTools,
-  PromptInputSubmit,
-} from './prompt-input';
-import { AnimatedPromptTextarea } from './animated-prompt-textarea';
-import Bolt from './lottie/bolt';
-import AttachFileButton from './attach-file-button';
+import ChatInterface from './chat-interface';
 import Image from 'next/image';
 import { motion } from 'motion/react';
 
@@ -19,7 +11,7 @@ export default function HeroSection() {
         role='main'
         className='bg-[#ffffff] overflow-hidden border-b border-zinc-300'
       >
-        <section className='relative py-32 md:py-44 lg:py-62'>
+        <section className='relative py-32 md:py-44 lg:py-52'>
           {/* Background layer 1 — 14.jpg */}
           <Image
             src='/14-2.png'
@@ -89,26 +81,7 @@ export default function HeroSection() {
                 delay: 0,
               }}
             >
-              <div className='bg-white/50 backdrop-blur-md border border-gray-200/60 shadow-md p-3 rounded-md'>
-                <div className='rounded-md bg-zinc-300 shadow-xl hover:shadow-2xl transition duration-300'>
-                  <PromptInput className='divide-y-0'>
-                    <AnimatedPromptTextarea className='min-h-[100px]' />
-                    <PromptInputToolbar>
-                      <PromptInputTools>
-                        <AttachFileButton />
-                      </PromptInputTools>
-                      <PromptInputSubmit>
-                        <Bolt
-                          mode='loop'
-                          size='w-4 h-4'
-                          className='brightness-0 invert'
-                        />
-                        Build
-                      </PromptInputSubmit>
-                    </PromptInputToolbar>
-                  </PromptInput>
-                </div>
-              </div>
+              <ChatInterface />
               <div className='bg-white/50 backdrop-blur-md border border-gray-200/60 shadow-md p-2 rounded-md max-w-[320px] mx-auto mt-4'>
                 <div className='flex justify-center items-center gap-4'>
                   <Image

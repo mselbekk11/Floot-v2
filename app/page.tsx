@@ -8,7 +8,7 @@
 // import BentoFive from '@/components/bento-5';
 // import CallToAction from '@/components/call-to-action';
 import BentoSix from '@/components/bento-6';
-import CTATwo from '@/components/cta-two';
+import CTAThree from '@/components/cta-three';
 import DiscoverTwo from '@/components/discover-two';
 import Extras from '@/components/extras';
 import Testimonials from '@/components/testimonials';
@@ -47,7 +47,7 @@ export default function Page() {
           className='object-cover pointer-events-none z-[1] opacity-60'
         />
         <div className='relative z-10 mx-auto max-w-[1240px] px-4'>
-          <CTATwo />
+          <CTAThree />
         </div>
       </section>
 
