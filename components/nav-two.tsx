@@ -41,7 +41,7 @@ export default function NavTwo() {
         {/* Desktop buttons - right */}
         <div className='hidden md:flex w-[200px] items-center justify-end gap-2'>
           <Button variant='ghost'>Login</Button>
-          <Button variant='floottwo'>Start Building</Button>
+          <Button variant='flootfour'>Start Building</Button>
         </div>
 
         {/* Mobile hamburger - right */}

@@ -1,6 +1,8 @@
+'use client';
+
 import Image from 'next/image';
-import { ArrowRight, Heart } from 'lucide-react';
-import Link from 'next/link';
+import { Heart } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const projects = [
   {
@@ -77,6 +79,53 @@ const projects = [
   },
 ];
 
+const tabData: Record<string, typeof projects> = {
+  all: projects,
+  app: [projects[2], projects[0], projects[5], projects[3], projects[7], projects[1], projects[4], projects[6]],
+  internal: [projects[4], projects[6], projects[1], projects[7], projects[0], projects[3], projects[5], projects[2]],
+  website: [projects[3], projects[5], projects[7], projects[1], projects[6], projects[2], projects[0], projects[4]],
+};
+
+function ProjectGrid({ items }: { items: typeof projects }) {
+  return (
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
+      {items.map((project) => (
+        <a
+          key={project.id}
+          href={project.link}
+          className='group flex flex-col gap-4'
+        >
+          <div className='relative w-full rounded-md p-2 bg-zinc-800'>
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={300}
+              height={300}
+              className='w-full md:w-auto'
+            />
+          </div>
+          <div className='flex flex-col gap-1'>
+            <div className='flex items-center justify-between'>
+              <p className='text-white text-sm font-medium truncate'>
+                {project.title}
+              </p>
+              <Heart className='size-4 text-[#FF3800] shrink-0' />
+            </div>
+            <div className='flex items-center justify-between'>
+              <p className='text-gray-400 text-xs truncate'>
+                {project.description}
+              </p>
+              <span className='text-gray-400 text-xs shrink-0'>
+                {project.likes}
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  );
+}
+
 export default function Discover() {
   return (
     <div className='bg-[#11100F] py-16 md:py-30 relative'>
@@ -90,62 +139,53 @@ export default function Discover() {
         }}
       ></div>
       <div className='px-4'>
-        <div className='mx-auto max-w-7xl relative z-50 flex justify-between items-center mb-4'>
-          <h2 className='text-white z-80 font-bricolage-grotesque font-semibold text-xl md:text-2xl'>
-            Discover apps
-          </h2>
-          <Link
-            href='/'
-            className='text-white text-sm hover:underline flex items-center gap-1'
-          >
-            View all
-            <ArrowRight className='size-4' />
-          </Link>
-        </div>
-        <div className='relative z-50 max-w-7xl mx-auto bg-[#0E0D0C] p-8 border border-[#272625] rounded-md overflow-hidden'>
-          <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
-              {projects.map((project) => (
-                <a
-                  key={project.id}
-                  href={project.link}
-                  className='group flex flex-col gap-4'
-                >
-                  {/* Image */}
-                  <div className='relative w-full rounded-md p-2 bg-zinc-800'>
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      width={300}
-                      height={300}
-                      className='w-full md:w-auto'
-                    />
-                  </div>
-
-                  {/* Info section */}
-                  <div className='flex flex-col gap-1'>
-                    {/* Row 1: Title + Heart */}
-                    <div className='flex items-center justify-between'>
-                      <p className='text-white text-sm font-medium truncate'>
-                        {project.title}
-                      </p>
-                      <Heart className='size-4 text-purple-600 fill-purple-600 shrink-0' />
-                    </div>
-                    {/* Row 2: Description + Number */}
-                    <div className='flex items-center justify-between'>
-                      <p className='text-gray-400 text-xs truncate'>
-                        {project.description}
-                      </p>
-                      <span className='text-gray-400 text-xs shrink-0'>
-                        {project.likes}
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
+        <Tabs defaultValue='all' className='mx-auto max-w-7xl relative z-50 !block'>
+          <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8'>
+            <h2 className='text-white z-80 font-bricolage-grotesque font-semibold text-xl md:text-2xl'>
+              Discover apps
+            </h2>
+            <TabsList className='bg-[#1A1918] rounded-full h-auto p-1'>
+              <TabsTrigger
+                value='all'
+                className='rounded-full px-4 py-1.5 text-sm text-gray-400 data-[state=active]:bg-[#2A2928] data-[state=active]:text-white'
+              >
+                All
+              </TabsTrigger>
+              <TabsTrigger
+                value='app'
+                className='rounded-full px-4 py-1.5 text-sm text-gray-400 data-[state=active]:bg-[#2A2928] data-[state=active]:text-white'
+              >
+                App
+              </TabsTrigger>
+              <TabsTrigger
+                value='internal'
+                className='rounded-full px-4 py-1.5 text-sm text-gray-400 data-[state=active]:bg-[#2A2928] data-[state=active]:text-white'
+              >
+                Internal
+              </TabsTrigger>
+              <TabsTrigger
+                value='website'
+                className='rounded-full px-4 py-1.5 text-sm text-gray-400 data-[state=active]:bg-[#2A2928] data-[state=active]:text-white'
+              >
+                Website
+              </TabsTrigger>
+            </TabsList>
           </div>
-        </div>
+          <div className='bg-[#0E0D0C] p-8 border border-[#272625] rounded-md overflow-hidden'>
+            <TabsContent value='all'>
+              <ProjectGrid items={tabData.all} />
+            </TabsContent>
+            <TabsContent value='app'>
+              <ProjectGrid items={tabData.app} />
+            </TabsContent>
+            <TabsContent value='internal'>
+              <ProjectGrid items={tabData.internal} />
+            </TabsContent>
+            <TabsContent value='website'>
+              <ProjectGrid items={tabData.website} />
+            </TabsContent>
+          </div>
+        </Tabs>
       </div>
     </div>
   );
