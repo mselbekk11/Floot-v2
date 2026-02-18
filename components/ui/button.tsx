@@ -30,7 +30,8 @@ const buttonVariants = cva(
         grey: 'bg-[#1A1A1A] text-white text-sm px-6! py-1.5 rounded-sm border border-zinc-700/60 hover:bg-[#232325] duration-300',
         pill: 'bg-[#1A1A1A] text-white font-bricolage-grotesque font-semibold rounded-full px-8! py-6! shadow-[0_4px_14px_0_rgba(0,0,0,0.2)] hover:bg-[#2a2a2a] hover:shadow-[0_6px_20px_0_rgba(0,0,0,0.3)] duration-300',
         flootfour:
-          'bg-[#1A1A1A] text-white font-bricolage-grotesque font-semibold rounded-full px-4! py-4! hover:bg-[#2a2a2a]',
+          'bg-[#1A1A1A] text-white font-bricolage-grotesque font-medium rounded-full px-4! py-4! hover:bg-[#2a2a2a]',
+          flootfive: 'bg-[#ffffff] text-black font-bricolage-grotesque font-medium rounded-full px-4! py-4! hover:bg-[#FF3800] hover:text-white border border-zinc-200',
       },
       size: {
         default:

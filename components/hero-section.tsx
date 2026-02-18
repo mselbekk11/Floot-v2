@@ -25,7 +25,7 @@ export default function HeroSection() {
             src='/14-2.png'
             alt=''
             fill
-            className='object-cover pointer-events-none z-[3] opacity-10'
+            className='object-cover pointer-events-none z-[3] opacity-5'
           />
           <Image
             src='/14.jpg'
@@ -89,39 +89,43 @@ export default function HeroSection() {
                 delay: 0,
               }}
             >
-              <div className='px-[2px] py-[2px] rounded-md bg-zinc-400 shadow-xl hover:shadow-2xl transition duration-300'>
-                <PromptInput className='divide-y-0'>
-                  <AnimatedPromptTextarea className='min-h-[100px]' />
-                  <PromptInputToolbar>
-                    <PromptInputTools>
-                      <AttachFileButton />
-                    </PromptInputTools>
-                    <PromptInputSubmit>
-                      <Bolt
-                        mode='loop'
-                        size='w-4 h-4'
-                        className='brightness-0 invert'
-                      />
-                      Build
-                    </PromptInputSubmit>
-                  </PromptInputToolbar>
-                </PromptInput>
+              <div className='bg-white/50 backdrop-blur-md border border-gray-200/60 shadow-md p-3 rounded-md'>
+                <div className='px-[2px] py-[2px] rounded-md bg-zinc-400 shadow-xl hover:shadow-2xl transition duration-300'>
+                  <PromptInput className='divide-y-0'>
+                    <AnimatedPromptTextarea className='min-h-[100px]' />
+                    <PromptInputToolbar>
+                      <PromptInputTools>
+                        <AttachFileButton />
+                      </PromptInputTools>
+                      <PromptInputSubmit>
+                        <Bolt
+                          mode='loop'
+                          size='w-4 h-4'
+                          className='brightness-0 invert'
+                        />
+                        Build
+                      </PromptInputSubmit>
+                    </PromptInputToolbar>
+                  </PromptInput>
+                </div>
               </div>
-              <div className='flex justify-center items-center gap-4 mt-6'>
-                <Image
-                  src='/y-combinator.svg'
-                  width={120}
-                  height={100}
-                  alt=''
-                  className='pointer-events-none'
-                />
-                <Image
-                  src='/product-hunt.svg'
-                  width={150}
-                  height={100}
-                  alt=''
-                  className='pointer-events-none'
-                />
+              <div className='bg-white/50 backdrop-blur-md border border-gray-200/60 shadow-md p-2 rounded-md max-w-[320px] mx-auto mt-4'>
+                <div className='flex justify-center items-center gap-4'>
+                  <Image
+                    src='/y-combinator.svg'
+                    width={120}
+                    height={100}
+                    alt=''
+                    className='pointer-events-none'
+                  />
+                  <Image
+                    src='/product-hunt.svg'
+                    width={150}
+                    height={100}
+                    alt=''
+                    className='pointer-events-none'
+                  />
+                </div>
               </div>
             </motion.div>
           </div>

@@ -24,7 +24,7 @@ const bentoItems = [
 
 export default function BentoSix() {
   return (
-    <div className='bg-[#FAFAFA] py-16 md:py-30'>
+    <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Intro */}
         <div className='mb-10'>
