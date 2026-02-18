@@ -17,6 +17,12 @@ export default function HeroSection() {
     <>
       <main role='main' className='bg-[#F9F9F9] overflow-hidden'>
         <section className='relative py-32 md:py-44 lg:py-48'>
+          <Image
+            src='/2.png'
+            alt=''
+            fill
+            className='object-cover opacity-20 pointer-events-none z-0'
+          />
           {/* Hue gradient blob */}
           {/* <Image
             src='/hue.svg'
@@ -74,7 +80,7 @@ export default function HeroSection() {
                 delay: 0,
               }}
             >
-              <div className='px-[8px] py-[8px] rounded-md bg-zinc-300 shadow-md hover:shadow-2xl transition duration-300'>
+              <div className='px-[4px] py-[4px] rounded-md bg-zinc-400 shadow-md hover:shadow-2xl transition duration-300'>
                 <PromptInput className='divide-y-0'>
                   <AnimatedPromptTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>
