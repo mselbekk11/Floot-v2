@@ -109,7 +109,7 @@ function ProjectGrid({ items }: { items: typeof projects }) {
               <p className='text-white text-sm font-medium truncate'>
                 {project.title}
               </p>
-              <Heart className='size-4 text-[#FF3800] shrink-0' />
+              <Heart className='size-4 text-zinc-300 shrink-0' />
             </div>
             <div className='flex items-center justify-between'>
               <p className='text-gray-400 text-xs truncate'>

@@ -19,8 +19,8 @@ export default function NavTwo() {
       <div className='w-full flex items-center h-[50px] z-50 relative px-2'>
         {/* Logo - left */}
         <div className='w-[200px] text-white flex items-center gap-1'>
-          <Image src='/floot.svg' alt='Floot' width={25} height={25} />
-          <div className='text-black text-xl font-semibold heading-serif'>
+          <Image src='/lego-block.svg' alt='Floot' width={25} height={25} />
+          <div className='text-black text-xl font-semibold font-bricolage-grotesque'>
             floot
           </div>
         </div>

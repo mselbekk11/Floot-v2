@@ -74,7 +74,7 @@ export default function FeatureTwo() {
             <div
               className={`lg:col-span-6 ${feature.reversed ? 'order-2 lg:order-1' : 'order-2'}`}
             >
-              <div className='shadow-[0_8px_30px_rgba(0,0,0,0.2)] bg-[#E9E8E5] p-4 border border-gray-300 rounded-lg'>
+              <div className='shadow-[0_8px_30px_rgba(0,0,0,0.2)] bg-[#E9E8E5] p-3 border border-gray-300 rounded-lg'>
                 <div className='aspect-video rounded-lg border border-gray-300  overflow-hidden bg-white'>
                   <video
                     src={feature.video}

@@ -74,7 +74,7 @@ export default function HeroSection() {
                 delay: 0,
               }}
             >
-              <div className='px-[3px] py-[3px] rounded-md bg-black shadow-md hover:shadow-2xl transition duration-300'>
+              <div className='px-[8px] py-[8px] rounded-md bg-zinc-300 shadow-md hover:shadow-2xl transition duration-300'>
                 <PromptInput className='divide-y-0'>
                   <AnimatedPromptTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>
