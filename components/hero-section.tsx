@@ -15,7 +15,7 @@ import { motion } from 'motion/react';
 export default function HeroSection() {
   return (
     <>
-      <main role='main' className='bg-[#F9F9F9] overflow-hidden'>
+      <main role='main' className='bg-[#ffffff] overflow-hidden'>
         <section className='relative py-32 md:py-44 lg:py-48'>
           <Image
             src='/2.png'
