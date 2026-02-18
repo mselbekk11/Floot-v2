@@ -37,7 +37,7 @@ const paytoneOne = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Floot v2',
+    default: 'Floot',
     template: '%s | Floot',
   },
   description: 'Build powerful apps fast. without writing code.',
