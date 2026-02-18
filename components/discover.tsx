@@ -79,22 +79,19 @@ const projects = [
 
 export default function Discover() {
   return (
-    <div className='bg-[#232325] py-16 md:py-30 relative'>
+    <div className='bg-[#11100F] py-16 md:py-30 relative'>
       <div
-        className='absolute inset-0 z-0'
+        className='absolute inset-0 z-0 pointer-events-none'
         style={{
-          backgroundImage: 'url(/stars.png)',
+          backgroundImage: 'url(/texture-two.svg)',
           backgroundRepeat: 'repeat',
-          backgroundSize: '500px',
-          opacity: 0.4,
+          backgroundSize: '100px 100px',
+          opacity: 0.3,
         }}
       ></div>
-      {/* <div className='mx-auto max-w-7xl relative z-50'>
-        <h2 className='text-white mb-8'>Discover apps</h2>
-      </div> */}
       <div className='px-4'>
         <div className='mx-auto max-w-7xl relative z-50 flex justify-between items-center mb-4'>
-          <h2 className='text-white z-80 heading-serif text-xl md:text-2xl'>
+          <h2 className='text-white z-80 font-bricolage-grotesque font-semibold text-xl md:text-2xl'>
             Discover apps
           </h2>
           <Link
@@ -105,7 +102,7 @@ export default function Discover() {
             <ArrowRight className='size-4' />
           </Link>
         </div>
-        <div className='relative z-50 max-w-7xl mx-auto bg-[#17171A] p-8 border border-[#3d3d3e] rounded-md'>
+        <div className='relative z-50 max-w-7xl mx-auto bg-[#0E0D0C] p-8 border border-[#272625] rounded-md overflow-hidden'>
           <div className='max-w-7xl mx-auto  relative z-10 flex flex-col gap-8'>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
               {projects.map((project) => (

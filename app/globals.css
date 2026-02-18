@@ -218,13 +218,30 @@
   }
 
   h2 {
-    
   }
 
   p {
     font-family: var(--font-bricolage-grotesque), sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
+  }
+
+  .texture-two {
+    position: relative;
+  }
+  .texture-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/texture-two.svg);
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
   }
 
   .texture-four {
