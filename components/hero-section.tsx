@@ -15,9 +15,18 @@ import { motion } from 'motion/react';
 export default function HeroSection() {
   return (
     <>
-      <main role='main' className='bg-[#ffffff] overflow-hidden border-b border-zinc-300'>
+      <main
+        role='main'
+        className='bg-[#ffffff] overflow-hidden border-b border-zinc-300'
+      >
         <section className='relative py-32 md:py-44 lg:py-62'>
           {/* Background layer 1 — 14.jpg */}
+          <Image
+            src='/14-2.png'
+            alt=''
+            fill
+            className='object-cover pointer-events-none z-[3] opacity-10'
+          />
           <Image
             src='/14.jpg'
             alt=''
@@ -80,7 +89,7 @@ export default function HeroSection() {
                 delay: 0,
               }}
             >
-              <div className='px-[4px] py-[4px] rounded-md bg-zinc-400 shadow-xl hover:shadow-2xl transition duration-300'>
+              <div className='px-[2px] py-[2px] rounded-md bg-zinc-400 shadow-xl hover:shadow-2xl transition duration-300'>
                 <PromptInput className='divide-y-0'>
                   <AnimatedPromptTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>

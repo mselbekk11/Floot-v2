@@ -11,6 +11,7 @@ import BentoSix from '@/components/bento-6';
 import CTATwo from '@/components/cta-two';
 import DiscoverTwo from '@/components/discover-two';
 import Extras from '@/components/extras';
+import Testimonials from '@/components/testimonials';
 import Yours from '@/components/yours';
 import FeatureTwo from '@/components/feature-two';
 import FooterTwo from '@/components/footer-two';
@@ -28,6 +29,7 @@ export default function Page() {
       <BentoSix />
       <Extras />
       <Yours />
+      <Testimonials />
       {/* CTA section with background images */}
       <section className='relative overflow-hidden py-16 md:py-30'>
         {/* Background layer 1 — 14.jpg */}
