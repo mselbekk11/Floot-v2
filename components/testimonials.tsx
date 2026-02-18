@@ -84,7 +84,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className='bg-[#ffffff] pb-16 md:pb-30 relative'>
+    <div className='bg-[#ffffff] py-16 md:py-30 relative'>
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Intro */}
         <div className='mb-10'>

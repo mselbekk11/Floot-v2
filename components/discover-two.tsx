@@ -41,51 +41,50 @@ const projects = [
   {
     id: 5,
     image: '/fire-2.png',
-    title: 'Iconstack',
-    description: '50,000+ Free SVG Icons',
-    likes: 749,
+    title: 'Flowboard',
+    description: 'Visual project management',
+    likes: 521,
     link: '/',
   },
   {
     id: 6,
     image: '/fire-1.png',
-    title: 'ExamAi',
-    description: 'Create, grade, and analyze your e...',
-    likes: 644,
+    title: 'Chatbase',
+    description: 'Custom AI chatbot for your site',
+    likes: 892,
     link: '/',
   },
   {
     id: 7,
     image: '/fire-2.png',
-    title: 'Attendflow',
-    description: 'Event marketing made simple',
-    likes: 613,
+    title: 'InvoiceKit',
+    description: 'Beautiful invoicing in seconds',
+    likes: 437,
     link: '/',
   },
   {
     id: 8,
     image: '/fire-1.png',
-    title: 'creativable',
-    description: 'All-in-one CRM, AI Assistant, tea...',
-    likes: 383,
+    title: 'FormCraft',
+    description: 'Smart forms that convert',
+    likes: 568,
     link: '/',
   },
 ];
 
 const tabData: Record<string, typeof projects> = {
-  all: projects,
-  apps: [projects[2], projects[0], projects[4], projects[3], projects[1], projects[5]],
-  sites: [projects[4], projects[1], projects[5], projects[0], projects[3], projects[2]],
-  internal: [projects[3], projects[5], projects[0], projects[2], projects[4], projects[1]],
-  dashboards: [projects[1], projects[3], projects[2], projects[5], projects[0], projects[4]],
+  aiapps: projects,
+  websites: [projects[4], projects[1], projects[6], projects[3], projects[7], projects[0], projects[5], projects[2]],
+  internal: [projects[3], projects[5], projects[0], projects[7], projects[2], projects[6], projects[4], projects[1]],
+  dashboards: [projects[1], projects[6], projects[3], projects[5], projects[0], projects[7], projects[2], projects[4]],
 };
 
 function ProjectGrid({ items }: { items: typeof projects }) {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
-      {items.map((project) => (
+      {items.map((project, index) => (
         <a
-          key={project.id}
+          key={`${project.id}-${index}`}
           href={project.link}
           className='group rounded-xl border border-gray-200 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)] transition-shadow duration-300 overflow-hidden'
         >
@@ -108,7 +107,7 @@ function ProjectGrid({ items }: { items: typeof projects }) {
               <p className='text-zinc-800 text-sm font-medium truncate'>
                 {project.title}
               </p>
-              <Heart className='size-4 text-zinc-300 shrink-0' />
+              <Heart className='size-4 text-zinc-300 shrink-0 group-hover:text-[#FF3800] group-hover:fill-[#FF3800] transition-colors duration-300' />
             </div>
             <div className='flex items-center justify-between'>
               <p className='text-gray-400 text-xs truncate'>
@@ -130,11 +129,11 @@ export default function DiscoverTwo() {
     <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Tabs */}
-        <Tabs defaultValue='all' className='!block'>
+        <Tabs defaultValue='aiapps' className='!block'>
           {/* Header + Tabs row */}
           <div className='flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10'>
             <div>
-              <p className='font-[family-name:var(--font-geist-sans)] text-sm font-medium text-[#FF3800]'>This is a test subtitle</p>
+              <p className='font-(family-name:--font-geist-sans) text-sm font-medium text-[#FF3800]'>Start from a template</p>
               <h2 className='font-bold text-2xl md:text-2xl text-zinc-800 mb-2 font-bricolage-grotesque'>
                 Discover templates
               </h2>
@@ -146,16 +145,16 @@ export default function DiscoverTwo() {
             </div>
             <TabsList className='bg-transparent rounded-none h-auto p-0 gap-2 flex-wrap shrink-0'>
               <TabsTrigger
-                value='all'
+                value='aiapps'
                 className='rounded-full px-4 py-1.5 text-sm border border-gray-200 text-gray-500 data-[state=active]:bg-black data-[state=active]:text-white data-[state=active]:border-zinc-800'
               >
                 AI Apps
               </TabsTrigger>
               <TabsTrigger
-                value='apps'
+                value='websites'
                 className='rounded-full px-4 py-1.5 text-sm border border-gray-200 text-gray-500 data-[state=active]:bg-black data-[state=active]:text-white data-[state=active]:border-zinc-800'
               >
-                Sites
+                Websites
               </TabsTrigger>
               <TabsTrigger
                 value='internal'
@@ -169,29 +168,20 @@ export default function DiscoverTwo() {
               >
                 Dashboards
               </TabsTrigger>
-              <TabsTrigger
-                value='sites'
-                className='rounded-full px-4 py-1.5 text-sm border border-gray-200 text-gray-500 data-[state=active]:bg-black data-[state=active]:text-white data-[state=active]:border-zinc-800'
-              >
-                Portals
-              </TabsTrigger>
             </TabsList>
           </div>
 
-          <TabsContent value='all'>
-            <ProjectGrid items={tabData.all} />
+          <TabsContent value='aiapps'>
+            <ProjectGrid items={tabData.aiapps} />
           </TabsContent>
-          <TabsContent value='apps'>
-            <ProjectGrid items={tabData.apps} />
+          <TabsContent value='websites'>
+            <ProjectGrid items={tabData.websites} />
           </TabsContent>
           <TabsContent value='internal'>
             <ProjectGrid items={tabData.internal} />
           </TabsContent>
           <TabsContent value='dashboards'>
             <ProjectGrid items={tabData.dashboards} />
-          </TabsContent>
-          <TabsContent value='sites'>
-            <ProjectGrid items={tabData.sites} />
           </TabsContent>
         </Tabs>
 

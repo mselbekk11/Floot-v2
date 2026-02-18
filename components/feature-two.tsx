@@ -1,4 +1,5 @@
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 const features = [
   {
@@ -10,6 +11,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSdD7QnbwnwO0DctSyevPuEhfqKr2GHZgxCaBR',
+    backgroundImage: '/A.png',
     reversed: false,
   },
   {
@@ -21,6 +23,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSWeggkt5TFyLNe2sw8i09aJvMC7K4VQzBgjDl',
+    backgroundImage: '/B.png',
     reversed: true,
   },
   {
@@ -32,6 +35,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSKKxROlmLmy7nfW20Q4xcC31YTMFNi5wgDAuZ',
+    backgroundImage: '/C.png',
     reversed: false,
   },
 ];
@@ -74,16 +78,24 @@ export default function FeatureTwo() {
             <div
               className={`lg:col-span-6 ${feature.reversed ? 'order-2 lg:order-1' : 'order-2'}`}
             >
-              <div className='shadow-[0_8px_30px_rgba(0,0,0,0.2)] bg-[#E9E8E5] p-3 border border-gray-300 rounded-lg'>
-                <div className='aspect-video rounded-lg border border-gray-300  overflow-hidden bg-white'>
-                  <video
-                    src={feature.video}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className='w-full h-full object-cover'
+              <div className='rounded-xl border border-gray-300 p-1 shadow-[0_8px_20px_rgba(0,0,0,0.2)]'>
+                <div className='relative p-5 border border-gray-300 rounded-lg overflow-hidden'>
+                  <Image
+                    src={feature.backgroundImage}
+                    alt=''
+                    fill
+                    className='object-cover pointer-events-none z-0 opacity-80'
                   />
+                  <div className='relative z-10 aspect-video rounded-lg border border-gray-300 overflow-hidden bg-white'>
+                    <video
+                      src={feature.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className='w-full h-full object-cover'
+                    />
+                  </div>
                 </div>
               </div>
             </div>
