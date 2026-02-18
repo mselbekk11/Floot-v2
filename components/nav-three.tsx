@@ -16,7 +16,7 @@ const links = [
 export default function NavThree() {
   return (
     <div className='fixed top-0 left-0 right-0 z-60 pt-4 px-4'>
-      <div className='mx-auto max-w-6xl bg-white/50 backdrop-blur-md rounded-full border border-gray-200/60 shadow-md'>
+      <div className='mx-auto max-w-[1240px] bg-white/50 backdrop-blur-md rounded-full border border-gray-200/60 shadow-md'>
         <div className='flex items-center h-[50px] px-2'>
           {/* Logo - left */}
           <div className='w-[200px] flex items-center gap-1'>

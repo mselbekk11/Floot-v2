@@ -128,7 +128,7 @@ function ProjectGrid({ items }: { items: typeof projects }) {
 export default function DiscoverTwo() {
   return (
     <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
-      <div className='mx-auto max-w-7xl px-4'>
+      <div className='mx-auto max-w-[1240px] px-4'>
         {/* Tabs */}
         <Tabs defaultValue='all' className='!block'>
           {/* Header + Tabs row */}

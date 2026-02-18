@@ -18,3 +18,6 @@ red
 font-merriweather
 
 border-b border-zinc-300
+
+
+max-w-[1240px]

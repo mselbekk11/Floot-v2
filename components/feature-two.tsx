@@ -39,7 +39,7 @@ const features = [
 export default function FeatureTwo() {
   return (
     <div className='bg-[#ffffff] py-12 md:py-40'>
-      <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16 md:gap-80'>
+      <div className='max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16 md:gap-80'>
         {features.map((feature, index) => (
           <div
             key={index}
