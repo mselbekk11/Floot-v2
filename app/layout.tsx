@@ -4,6 +4,7 @@ import {
   Geist_Mono,
   Source_Serif_4,
   Bricolage_Grotesque,
+  Merriweather,
 } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -27,6 +28,12 @@ const bricolageGrotesque = Bricolage_Grotesque({
 const sourceSerif = Source_Serif_4({
   variable: '--font-source-serif',
   subsets: ['latin'],
+});
+
+const merriweather = Merriweather({
+  variable: '--font-merriweather',
+  subsets: ['latin'],
+  weight: ['300', '400', '700', '900'],
 });
 
 const paytoneOne = localFont({
@@ -116,7 +123,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.variable} ${sourceSerif.variable} ${paytoneOne.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bricolageGrotesque.variable} ${sourceSerif.variable} ${merriweather.variable} ${paytoneOne.variable} antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

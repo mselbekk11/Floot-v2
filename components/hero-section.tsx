@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <>
       <main role='main' className='bg-[#F9F9F9] overflow-hidden'>
-        <section className='relative py-32 md:py-44 lg:py-62'>
+        <section className='relative py-32 md:py-44 lg:py-48'>
           {/* Hue gradient blob */}
           {/* <Image
             src='/hue.svg'

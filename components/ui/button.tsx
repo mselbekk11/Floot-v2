@@ -24,6 +24,7 @@ const buttonVariants = cva(
         floothree:
           'bg-gradient-to-b from-[#720DDE] via-[#872FE5] to-[#A958EB] text-white font-bricolage-grotesque font-semibold rounded-sm px-4! ',
         grey: 'bg-[#1A1A1A] text-white text-sm px-6! py-1.5 rounded-sm border border-zinc-700/60 hover:bg-[#232325] duration-300',
+        pill: 'bg-[#1A1A1A] text-white font-bricolage-grotesque font-semibold rounded-full px-8! py-6! shadow-[0_4px_14px_0_rgba(0,0,0,0.2)] hover:bg-[#2a2a2a] hover:shadow-[0_6px_20px_0_rgba(0,0,0,0.3)] duration-300',
       },
       size: {
         default: "h-9 gap-1.5 px-3 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5",

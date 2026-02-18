@@ -14,3 +14,5 @@ light grey
 
 red
 #FF3800
+
+font-merriweather

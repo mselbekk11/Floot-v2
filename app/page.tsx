@@ -3,6 +3,7 @@ import BentoFive from '@/components/bento-5';
 import CallToAction from '@/components/call-to-action';
 import Discover from '@/components/discover';
 import FeatureBase from '@/components/feature-base';
+import FeatureTwo from '@/components/feature-two';
 import FeaturesSliderSection from '@/components/features-carousel';
 // import FooterSection from '@/components/footer';
 import FooterTwo from '@/components/footer-two';
@@ -18,7 +19,8 @@ export default function Page() {
       {/* <FeaturesSliderSection /> */}
       {/* <Apps /> */}
       <Discover />
-      <FeatureBase />
+      <FeatureTwo />
+      {/* <FeatureBase /> */}
       <BentoFive />
       <CallToAction />
       <FooterTwo />

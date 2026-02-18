@@ -202,6 +202,10 @@
   .font-bricolage-grotesque {
     font-family: var(--font-bricolage-grotesque), sans-serif;
   }
+  .font-merriweather {
+    font-family: var(--font-merriweather), Georgia, serif;
+    letter-spacing: 0.03em;
+  }
 }
 
 @layer base {
@@ -221,7 +225,7 @@
   }
 
   p {
-    font-family: var(--font-bricolage-grotesque), sans-serif;
+    /* font-family: var(--font-bricolage-grotesque), sans-serif; */
     font-size: 0.875rem;
     font-weight: 400;
   }
