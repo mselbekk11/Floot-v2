@@ -15,22 +15,22 @@ import { motion } from 'motion/react';
 export default function HeroSection() {
   return (
     <>
-      <main role='main' className='bg-[#ffffff] overflow-hidden'>
-        <section className='relative py-32 md:py-44 lg:py-48'>
+      <main role='main' className='bg-[#ffffff] overflow-hidden border-b border-zinc-300'>
+        <section className='relative py-32 md:py-44 lg:py-62'>
+          {/* Background layer 1 — 14.jpg */}
           <Image
-            src='/2.png'
+            src='/14.jpg'
             alt=''
             fill
-            className='object-cover opacity-20 pointer-events-none z-0'
+            className='object-cover pointer-events-none z-[2] opacity-40'
           />
-          {/* Hue gradient blob */}
-          {/* <Image
-            src='/hue.svg'
-            width={1655}
-            height={341}
+          {/* Background layer 2 — 47.jpg */}
+          <Image
+            src='/47.jpg'
             alt=''
-            className='pointer-events-none absolute z-50 w-full top-0 left-0'
-          /> */}
+            fill
+            className='object-cover pointer-events-none z-[1] opacity-60'
+          />
 
           <div className='relative z-10 mx-auto max-w-5xl px-4 text-center'>
             <motion.h1
@@ -46,13 +46,13 @@ export default function HeroSection() {
               Build powerful apps fast. <br />
               <span className='relative inline-block'>
                 without
-                <Image
+                {/* <Image
                   src='/stripe-red.svg'
                   width={170}
                   height={50}
                   alt=''
                   className='pointer-events-none absolute -bottom-1 md:-bottom-2 left-0 w-full'
-                />
+                /> */}
               </span>{' '}
               writing code.
             </motion.h1>
@@ -80,7 +80,7 @@ export default function HeroSection() {
                 delay: 0,
               }}
             >
-              <div className='px-[4px] py-[4px] rounded-md bg-zinc-400 shadow-md hover:shadow-2xl transition duration-300'>
+              <div className='px-[4px] py-[4px] rounded-md bg-zinc-400 shadow-xl hover:shadow-2xl transition duration-300'>
                 <PromptInput className='divide-y-0'>
                   <AnimatedPromptTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>

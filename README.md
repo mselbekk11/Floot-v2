@@ -16,3 +16,5 @@ red
 #FF3800
 
 font-merriweather
+
+border-b border-zinc-300
