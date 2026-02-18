@@ -20,7 +20,7 @@ const buttonVariants = cva(
         floot:
           'bg-[rgb(255,133,229)] text-black font-bricolage-grotesque font-semibold px-8! py-5! border-2 border-black',
         floottwo:
-          'bg-[#7c3aed] [background-image:linear-gradient(to_bottom_right,#A02BE4,transparent,#4f46e5)] [background-clip:padding-box] text-white font-bricolage-grotesque font-semibold rounded-sm px-4! shadow-[inset_0_0_0_1px_rgb(221_214_254/.25)] [text-shadow:0_1px_3px_rgb(0_0_0/.3)] hover:bg-[#6d28d9] duration-300',
+          'bg-[#1A1A1A] text-white font-bricolage-grotesque font-semibold rounded-sm px-4! hover:bg-[#232325] duration-300',
         floothree:
           'bg-gradient-to-b from-[#720DDE] via-[#872FE5] to-[#A958EB] text-white font-bricolage-grotesque font-semibold rounded-sm px-4! ',
         grey: 'bg-[#1A1A1A] text-white text-sm px-6! py-1.5 rounded-sm border border-zinc-700/60 hover:bg-[#232325] duration-300',

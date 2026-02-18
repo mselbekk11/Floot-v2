@@ -15,12 +15,12 @@ const links = [
 
 export default function NavTwo() {
   return (
-    <div className='w-full bg-[#1A1A1A] sticky top-0 z-60 shadow-2xl shadow-black/80'>
+    <div className='w-full bg-[#F9F9F9] sticky top-0 z-60 border-b border-[#DBDBDB]'>
       <div className='w-full flex items-center h-[50px] z-50 relative px-2'>
         {/* Logo - left */}
         <div className='w-[200px] text-white flex items-center gap-1'>
           <Image src='/logo-pink.svg' alt='Floot' width={25} height={25} />
-          <div className='text-white text-xl font-semibold heading-serif'>
+          <div className='text-black text-xl font-semibold heading-serif'>
             floot
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function NavTwo() {
             <Link
               key={link.id}
               href={link.href}
-              className='text-white text-sm font-bricolage-grotesque font-light hover:text-zinc-300 duration-300'
+              className='text-[#818181] text-sm font-bricolage-grotesque font-semibold hover:text-zinc-300 duration-300'
             >
               {link.label}
             </Link>
@@ -40,7 +40,7 @@ export default function NavTwo() {
 
         {/* Desktop buttons - right */}
         <div className='hidden md:flex w-[200px] items-center justify-end gap-2'>
-          <Button variant='grey'>Login</Button>
+          <Button variant='ghost'>Login</Button>
           <Button variant='floottwo'>Start Building</Button>
         </div>
 

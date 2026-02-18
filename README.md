@@ -7,3 +7,10 @@ h3
 text-white heading-serif text-lg md:text-xl
 
 py-16 md:py-30
+
+
+light grey
+#F9F9F9
+
+red
+#FF3800

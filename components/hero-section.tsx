@@ -15,20 +15,20 @@ import { motion } from 'motion/react';
 export default function HeroSection() {
   return (
     <>
-      <main role='main' className='bg-[#F0EDFF] overflow-hidden'>
+      <main role='main' className='bg-[#F9F9F9] overflow-hidden'>
         <section className='relative py-32 md:py-44 lg:py-62'>
           {/* Hue gradient blob */}
-          <Image
+          {/* <Image
             src='/hue.svg'
             width={1655}
             height={341}
             alt=''
             className='pointer-events-none absolute z-50 w-full top-0 left-0'
-          />
+          /> */}
 
           <div className='relative z-10 mx-auto max-w-5xl px-4 text-center'>
             <motion.h1
-              className='mx-auto max-w-3xl text-balance text-2xl font-semibold md:text-5xl text-zinc-800 heading-serif z-20 relative'
+              className='mx-auto max-w-3xl text-balance text-2xl font-semibold md:text-5xl text-zinc-800 font-bricolage-grotesque z-20 relative'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -41,7 +41,7 @@ export default function HeroSection() {
               <span className='relative inline-block'>
                 without
                 <Image
-                  src='/stripe.svg'
+                  src='/stripe-red.svg'
                   width={170}
                   height={50}
                   alt=''
@@ -74,7 +74,7 @@ export default function HeroSection() {
                 delay: 0,
               }}
             >
-              <div className='px-[3px] py-[3px] rounded-md bg-linear-to-r from-[#9B17F7] via-[#D13AC0] to-[#DE3AB4] shadow-md hover:shadow-2xl transition duration-300'>
+              <div className='px-[3px] py-[3px] rounded-md bg-black shadow-md hover:shadow-2xl transition duration-300'>
                 <PromptInput className='divide-y-0'>
                   <AnimatedPromptTextarea className='min-h-[100px]' />
                   <PromptInputToolbar>
