@@ -128,7 +128,8 @@ function ProjectGrid({ items }: { items: typeof projects }) {
 
 export default function DiscoverTwo() {
   return (
-    <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
+    <div className='relative bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300 overflow-hidden'>
+      {/* <div className='absolute -top-[400px] -left-[400px] w-[800px] h-[800px] rounded-full border-[40px] border-[#FF3800] opacity-10 pointer-events-none hidden lg:block' /> */}
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Tabs */}
         <Tabs defaultValue='aiapps' className='!block'>
@@ -140,7 +141,7 @@ export default function DiscoverTwo() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            <div>
+            <div className=''>
               <p className='font-(family-name:--font-geist-sans) text-sm font-medium text-[#FF3800]'>Start from a template</p>
               <h2 className='font-bold text-2xl md:text-2xl text-zinc-800 mb-2 font-bricolage-grotesque'>
                 Discover templates

@@ -45,7 +45,9 @@ const features = [
 
 export default function FeatureTwo() {
   return (
-    <div className='bg-[#ffffff] py-12 md:py-40 border-b border-zinc-300'>
+    <div className='relative bg-[#ffffff] py-12 md:py-40 border-b border-zinc-300 overflow-hidden'>
+      <div className='absolute -top-[400px] -right-[400px] w-[800px] h-[800px] rounded-full border-[60px] border-[#FF3800] opacity-5 pointer-events-none hidden lg:block' />
+      <div className='absolute -bottom-[400px] -right-[400px] w-[800px] h-[800px] rounded-full border-[60px] border-[#FF3800] opacity-5 pointer-events-none hidden lg:block' />
       <div className='max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-16 md:gap-80'>
         {features.map((feature, index) => (
           <div
@@ -87,7 +89,11 @@ export default function FeatureTwo() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+              transition={{
+                duration: 0.6,
+                ease: [0.25, 0.1, 0.25, 1],
+                delay: 0.1,
+              }}
             >
               <div className='rounded-xl border border-gray-300 p-1 shadow-[0_8px_20px_rgba(0,0,0,0.2)]'>
                 <div className='relative p-5 border border-gray-300 rounded-lg overflow-hidden'>

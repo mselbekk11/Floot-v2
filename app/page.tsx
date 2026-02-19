@@ -27,7 +27,6 @@ export default function Page() {
       <HeroSection />
       <DiscoverTwo />
       <FeatureTwo />
-      {/* <BentoSix /> */}
       <BentoSeven />
       <Extras />
       <Yours />

@@ -29,8 +29,9 @@ const items = [
 
 export default function Yours() {
   return (
-    <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
-      <div className='mx-auto max-w-[1240px] px-4'>
+    <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300 relative'>
+      <div className='absolute -bottom-[400px] -right-[400px] w-[800px] h-[800px] rounded-full border-[60px] border-[#FF3800] opacity-5 pointer-events-none hidden lg:block' />
+      <div className='mx-auto max-w-[1240px] px-4 relative z-0'>
         {/* Intro */}
         <motion.div
           className='mb-10 flex flex-col'

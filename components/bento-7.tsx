@@ -1,12 +1,6 @@
 'use client';
 
-import {
-  CreditCard,
-  Users,
-  Database,
-  Rocket,
-  Activity,
-} from 'lucide-react';
+import { CreditCard, Users, Database, Rocket, Activity } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -18,15 +12,13 @@ const bentoItems: {
 }[] = [
   {
     title: 'Accept Payments',
-    description:
-      'Start charging for your products or services instantly.',
+    description: 'Start charging for your products or services instantly.',
     icon: CreditCard,
     footnote: 'Stripe, PayPal & more\nout of the box',
   },
   {
     title: 'User Management',
-    description:
-      'Easily add customers or team members to your app.',
+    description: 'Easily add customers or team members to your app.',
     icon: Users,
     footnote: 'Auth + roles\nin under 5 min',
   },
@@ -44,8 +36,7 @@ const bentoItems: {
   },
   {
     title: 'Monitoring',
-    description:
-      'Floot keeps an eye on your app, detecting issues 24/7.',
+    description: 'Floot keeps an eye on your app, detecting issues 24/7.',
     icon: Activity,
     footnote: 'Real-time alerts\n(always watching)',
   },
@@ -53,8 +44,9 @@ const bentoItems: {
 
 export default function BentoSeven() {
   return (
-    <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
-      <div className='mx-auto max-w-[1240px] px-4'>
+    <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300 relative overflow-hidden'>
+      <div className='absolute -bottom-[400px] -left-[400px] w-[800px] h-[800px] rounded-full border-[60px] border-[#FF3800] opacity-5 pointer-events-none hidden lg:block' />
+      <div className='mx-auto max-w-[1240px] px-4 relative z-0'>
         {/* Intro */}
         <motion.div
           className='mb-10'
