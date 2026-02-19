@@ -8,21 +8,21 @@ const items = [
     title: 'Your Code',
     description:
       'Every line of code is yours to keep. Export, modify, or host it anywhere.',
-    backgroundImage: '/A.webp',
+    backgroundImage: '/A.png',
     icon: '/code.svg',
   },
   {
     title: 'Your Data',
     description:
       'All your app data stays under your control. Download or migrate it anytime.',
-    backgroundImage: '/B.webp',
+    backgroundImage: '/B.png',
     icon: '/data.svg',
   },
   {
     title: 'Your IP',
     description:
       'What you build on Floot belongs to you. Full intellectual property rights',
-    backgroundImage: '/C.webp',
+    backgroundImage: '/C.png',
     icon: '/lightbulb.svg',
   },
 ];

@@ -33,7 +33,7 @@ export default function Page() {
       <Yours />
       <Testimonials />
       {/* CTA section with background images */}
-      <section className='relative overflow-hidden py-16 md:py-30'>
+      <section className='relative overflow-hidden py-16 md:py-20'>
         {/* Background layer 1 — 14.jpg */}
         <Image
           src='/14.jpg'

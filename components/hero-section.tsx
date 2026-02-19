@@ -14,7 +14,7 @@ export default function HeroSection() {
         <section className='relative py-32 md:py-44 lg:py-52'>
           {/* Background layer 1 — 14.jpg */}
           <Image
-            src='/14-2.webp'
+            src='/14-2.png'
             alt=''
             fill
             priority
@@ -83,7 +83,7 @@ export default function HeroSection() {
               }}
             >
               <ChatInterface />
-              <div className='bg-white/50 backdrop-blur-md border border-gray-200/60 shadow-md p-2 rounded-md max-w-[320px] mx-auto mt-4'>
+              <div className='bg-white/50 backdrop-blur-md border border-gray-200/60 shadow-md p-2 rounded-md max-w-[320px] mx-auto mt-4 hidden sm:flex'>
                 <div className='flex justify-center items-center gap-4'>
                   <Image
                     src='/y-combinator.svg'

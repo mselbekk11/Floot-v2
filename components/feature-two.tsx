@@ -14,7 +14,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSdD7QnbwnwO0DctSyevPuEhfqKr2GHZgxCaBR',
-    backgroundImage: '/A.webp',
+    backgroundImage: '/A.png',
     reversed: false,
   },
   {
@@ -26,7 +26,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSWeggkt5TFyLNe2sw8i09aJvMC7K4VQzBgjDl',
-    backgroundImage: '/B.webp',
+    backgroundImage: '/B.png',
     reversed: true,
   },
   {
@@ -38,7 +38,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSKKxROlmLmy7nfW20Q4xcC31YTMFNi5wgDAuZ',
-    backgroundImage: '/C.webp',
+    backgroundImage: '/C.png',
     reversed: false,
   },
 ];

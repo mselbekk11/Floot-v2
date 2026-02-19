@@ -5,33 +5,33 @@ const bentoItems = [
     title: 'Accept Payments',
     description:
       'Start charging for your products or services instantly with secure, built-in payment tools.',
-    backgroundImage: '/A.webp',
+    backgroundImage: '/A.png',
     icon: '/Secure_Card.svg',
   },
   {
     title: 'User Management',
     description:
       'Easily add customers, team members, or members to your app in just a few clicks.',
-    backgroundImage: '/B.webp',
+    backgroundImage: '/B.png',
     icon: '/Secure_Card_2.svg',
   },
   {
     title: 'Backend & Database',
     description: 'Comes with a secure backend & database built in.',
-    backgroundImage: '/C.webp',
+    backgroundImage: '/C.png',
     icon: '/icon-t.svg',
   },
   {
     title: '1 Click Hosting',
     description: 'Launch your app to the world with a single click.',
-    backgroundImage: '/A.webp',
+    backgroundImage: '/A.png',
     icon: '/icon-t.svg',
   },
   {
     title: 'Monitoring',
     description:
       'Floot keeps an eye on your app, detecting issues 24/7.',
-    backgroundImage: '/B.webp',
+    backgroundImage: '/B.png',
     icon: '/icon-t.svg',
   },
 ];

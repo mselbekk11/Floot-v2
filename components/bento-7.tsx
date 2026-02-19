@@ -84,7 +84,7 @@ export default function BentoSeven() {
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
         >
           <div className='rounded-lg border border-gray-200 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] overflow-hidden'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 divide-x divide-gray-200'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 divide-x divide-gray-200'>
               {bentoItems.map((item, i) => (
                 <div key={i} className='flex flex-col p-5'>
                   {/* Icon */}
@@ -98,9 +98,9 @@ export default function BentoSeven() {
                     {item.description}
                   </p>
                   {/* Spacer */}
-                  <div className='flex-1 min-h-[200px]' />
+                  <div className='hidden sm:flex-1 min-h-[200px] sm:block!' />
                   {/* Footnote */}
-                  <p className='text-[#FF3800] text-xs md:text-sm font-medium leading-relaxed whitespace-pre-line'>
+                  <p className='text-[#FF3800] text-xs md:text-sm font-medium leading-relaxed whitespace-pre-line hidden sm:block'>
                     {item.footnote}
                   </p>
                 </div>
