@@ -8,21 +8,21 @@ const items = [
     title: 'Your Code',
     description:
       'Every line of code is yours to keep. Export, modify, or host it anywhere.',
-    backgroundImage: '/A.png',
+    backgroundImage: '/A.webp',
     icon: '/code.svg',
   },
   {
     title: 'Your Data',
     description:
       'All your app data stays under your control. Download or migrate it anytime.',
-    backgroundImage: '/B.png',
+    backgroundImage: '/B.webp',
     icon: '/data.svg',
   },
   {
     title: 'Your IP',
     description:
       'What you build on Floot belongs to you. Full intellectual property rights',
-    backgroundImage: '/C.png',
+    backgroundImage: '/C.webp',
     icon: '/lightbulb.svg',
   },
 ];
@@ -72,6 +72,7 @@ export default function Yours() {
                       src={item.backgroundImage}
                       alt=''
                       fill
+                      sizes='(max-width: 768px) 100vw, 33vw'
                       className='object-cover pointer-events-none z-0'
                     />
                     <div className='relative z-10 rounded-lg h-48 md:h-64 flex items-center justify-center'>

@@ -5,33 +5,33 @@ const bentoItems = [
     title: 'Accept Payments',
     description:
       'Start charging for your products or services instantly with secure, built-in payment tools.',
-    backgroundImage: '/A.png',
+    backgroundImage: '/A.webp',
     icon: '/Secure_Card.svg',
   },
   {
     title: 'User Management',
     description:
       'Easily add customers, team members, or members to your app in just a few clicks.',
-    backgroundImage: '/B.png',
+    backgroundImage: '/B.webp',
     icon: '/Secure_Card_2.svg',
   },
   {
     title: 'Backend & Database',
     description: 'Comes with a secure backend & database built in.',
-    backgroundImage: '/C.png',
+    backgroundImage: '/C.webp',
     icon: '/icon-t.svg',
   },
   {
     title: '1 Click Hosting',
     description: 'Launch your app to the world with a single click.',
-    backgroundImage: '/A.png',
+    backgroundImage: '/A.webp',
     icon: '/icon-t.svg',
   },
   {
     title: 'Monitoring',
     description:
       'Floot keeps an eye on your app, detecting issues 24/7.',
-    backgroundImage: '/B.png',
+    backgroundImage: '/B.webp',
     icon: '/icon-t.svg',
   },
 ];
@@ -53,6 +53,7 @@ function BentoCard({
               src={item.backgroundImage}
               alt=''
               fill
+              sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
               className='object-cover pointer-events-none z-0'
             />
             <div className={`relative z-10 rounded-lg ${imageHeight} flex items-center justify-center`}>

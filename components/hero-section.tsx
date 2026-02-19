@@ -14,9 +14,10 @@ export default function HeroSection() {
         <section className='relative py-32 md:py-44 lg:py-52'>
           {/* Background layer 1 — 14.jpg */}
           <Image
-            src='/14-2.png'
+            src='/14-2.webp'
             alt=''
             fill
+            priority
             className='object-cover pointer-events-none z-[3] opacity-5'
           />
           <Image

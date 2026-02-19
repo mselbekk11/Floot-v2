@@ -14,7 +14,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSdD7QnbwnwO0DctSyevPuEhfqKr2GHZgxCaBR',
-    backgroundImage: '/A.png',
+    backgroundImage: '/A.webp',
     reversed: false,
   },
   {
@@ -26,7 +26,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSWeggkt5TFyLNe2sw8i09aJvMC7K4VQzBgjDl',
-    backgroundImage: '/B.png',
+    backgroundImage: '/B.webp',
     reversed: true,
   },
   {
@@ -38,7 +38,7 @@ const features = [
     ],
     video:
       'https://uttkgexdc6.ufs.sh/f/l2Zi8yDbeJCSKKxROlmLmy7nfW20Q4xcC31YTMFNi5wgDAuZ',
-    backgroundImage: '/C.png',
+    backgroundImage: '/C.webp',
     reversed: false,
   },
 ];
@@ -95,6 +95,7 @@ export default function FeatureTwo() {
                     src={feature.backgroundImage}
                     alt=''
                     fill
+                    sizes='(max-width: 768px) 100vw, 50vw'
                     className='object-cover pointer-events-none z-0 opacity-80'
                   />
                   <div className='relative z-10 aspect-video rounded-lg border border-gray-300 overflow-hidden bg-white'>
