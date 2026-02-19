@@ -71,18 +71,18 @@ export const metadata: Metadata = {
   creator: 'Morgan Selbekk',
   publisher: 'Morgan Selbekk',
 
-  metadataBase: new URL('https://floot-nkop.vercel.app/'),
+  metadataBase: new URL('https://floot-v2.vercel.app/'),
 
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://floot-nkop.vercel.app/',
+    url: 'https://floot-v2.vercel.app/',
     title: 'Floot',
     description: 'Build powerful apps fast. without writing code.',
     siteName: 'Floot',
     images: [
       {
-        url: 'https://floot-nkop.vercel.app/og-image.png',
+        url: 'https://floot-v2.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Floot',
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     title: 'Floot',
     description: 'Build powerful apps fast. without writing code.',
     creator: '@mselbekk1',
-    images: ['https://floot-nkop.vercel.app/og-image.png'],
+    images: ['https://floot-v2.vercel.app/og-image.png'],
   },
 
   robots: {
