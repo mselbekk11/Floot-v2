@@ -2,19 +2,25 @@ import Image from 'next/image';
 
 const items = [
   {
-    title: 'Code',
-    description: 'Complete code ownership.',
+    title: 'Your Code',
+    description:
+      'Every line of code is yours to keep. Export, modify, or host it anywhere.',
     backgroundImage: '/A.png',
+    icon: '/code.svg',
   },
   {
-    title: 'Data',
-    description: 'All app data belongs to you.',
+    title: 'Your Data',
+    description:
+      'All your app data stays under your control. Download or migrate it anytime.',
     backgroundImage: '/B.png',
+    icon: '/data.svg',
   },
   {
-    title: 'IP',
-    description: 'Full intellectual property rights.',
+    title: 'Your IP',
+    description:
+      'What you build on Floot belongs to you. Full intellectual property rights',
     backgroundImage: '/C.png',
+    icon: '/lightbulb.svg',
   },
 ];
 
@@ -46,22 +52,32 @@ export default function Yours() {
               <div className='rounded-lg border border-gray-200 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] overflow-hidden'>
                 {/* Image area with background */}
                 <div className='p-3 pb-0'>
-                  <div className='relative rounded-lg overflow-hidden p-3'>
+                  <div className='relative rounded-lg overflow-hidden p-3 shadow-xl'>
                     <Image
                       src={item.backgroundImage}
                       alt=''
                       fill
                       className='object-cover pointer-events-none z-0'
                     />
-                    <div className='relative z-10 rounded-lg h-48 md:h-64' />
+                    <div className='relative z-10 rounded-lg h-48 md:h-64 flex items-center justify-center'>
+                      <div className='bg-white/20 backdrop-blur-md rounded-xl border border-white/10 py-4 px-6'>
+                        <Image
+                          src={item.icon}
+                          alt={item.title}
+                          width={48}
+                          height={48}
+                          className='pointer-events-none'
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 {/* Text */}
-                <div className='p-5 text-center'>
-                  <h3 className='font-bricolage-grotesque font-semibold text-lg text-zinc-800 mb-1'>
+                <div className='p-5'>
+                  <h2 className='font-bricolage-grotesque font-bold text-xl text-zinc-800 mb-2'>
                     {item.title}
-                  </h3>
-                  <p className='text-gray-500 text-sm leading-relaxed'>
+                  </h2>
+                  <p className='text-gray-500 text-sm leading-relaxed max-w-[300px]'>
                     {item.description}
                   </p>
                 </div>

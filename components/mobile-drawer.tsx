@@ -44,7 +44,7 @@ export default function MobileDrawer() {
           <div className='flex flex-col h-[50px] justify-center px-4 border-b border-zinc-300'>
             <div className='w-[200px]  flex items-center gap-1'>
               <Image src='/floot.svg' alt='Floot' width={25} height={25} />
-              <div className='text-zinc-800 text-xl font-semibold heading-serif'>
+              <div className='text-zinc-800 text-xl font-semibold font-bricolage-grotesque'>
                 floot
               </div>
             </div>

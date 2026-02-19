@@ -60,7 +60,7 @@ export default function FooterTwo() {
                   height={25}
                 />
               </Link>
-              <div className='text-white text-xl font-semibold heading-serif'>
+              <div className='text-white text-xl font-semibold font-bricolage-grotesque'>
                 floot
               </div>
             </div>
