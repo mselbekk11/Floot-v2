@@ -7,7 +7,8 @@
 // import NavTwo from '@/components/nav-two';
 // import BentoFive from '@/components/bento-5';
 // import CallToAction from '@/components/call-to-action';
-import BentoSix from '@/components/bento-6';
+// import BentoSix from '@/components/bento-6';
+import BentoSeven from '@/components/bento-7';
 import CTAThree from '@/components/cta-three';
 import DiscoverTwo from '@/components/discover-two';
 import Extras from '@/components/extras';
@@ -26,7 +27,8 @@ export default function Page() {
       <HeroSection />
       <DiscoverTwo />
       <FeatureTwo />
-      <BentoSix />
+      {/* <BentoSix /> */}
+      <BentoSeven />
       <Extras />
       <Yours />
       <Testimonials />

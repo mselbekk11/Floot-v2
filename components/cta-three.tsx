@@ -30,7 +30,7 @@ export default function CTAThree() {
           delay: 0.1,
         }}
       >
-        Describe what you want to build and let Floot do the rest. No credit
+        Describe what you want to build and let Floot do the rest.<br /> No credit
         card required.
       </motion.p>
 

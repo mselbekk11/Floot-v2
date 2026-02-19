@@ -17,12 +17,16 @@ const links = [
 
 export default function MobileDrawer() {
   const [open, setOpen] = useState(false);
-  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   if (!mounted) {
     return (
       <button aria-label='Open menu'>
-        <Menu className='text-white size-6' />
+        <Menu className='text-zinc-800 size-6' />
       </button>
     );
   }
@@ -31,16 +35,16 @@ export default function MobileDrawer() {
     <Drawer direction='left' open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
         <button aria-label='Open menu'>
-          <Menu className='text-white size-6' />
+          <Menu className='text-zinc-800 size-6' />
         </button>
       </DrawerTrigger>
       <DrawerContent>
         <DrawerTitle className='sr-only'>Navigation Menu</DrawerTitle>
         <div className=''>
-          <div className='flex flex-col h-[50px] justify-center px-4 border-b border-white/10'>
-            <div className='w-[200px] text-white flex items-center gap-1'>
-              <Image src='/logo-pink.svg' alt='Floot' width={25} height={25} />
-              <div className='text-white text-xl font-semibold heading-serif'>
+          <div className='flex flex-col h-[50px] justify-center px-4 border-b border-zinc-300'>
+            <div className='w-[200px]  flex items-center gap-1'>
+              <Image src='/floot.svg' alt='Floot' width={25} height={25} />
+              <div className='text-zinc-800 text-xl font-semibold heading-serif'>
                 floot
               </div>
             </div>
@@ -51,7 +55,7 @@ export default function MobileDrawer() {
                 key={link.id}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className=' py-3 text-sm text-white'
+                className=' py-3 text-sm text-zinc-600'
               >
                 {link.label}
               </Link>
@@ -59,10 +63,10 @@ export default function MobileDrawer() {
           </nav>
         </div>
         <div className='flex flex-col gap-2 p-4 mt-auto'>
-          <Button variant='grey' className='w-full'>
+          <Button variant='flootfive' className='w-full'>
             Login
           </Button>
-          <Button variant='floottwo' className='w-full'>
+          <Button variant='flootfour' className='w-full'>
             Start Building
           </Button>
         </div>

@@ -50,11 +50,11 @@ export default function FooterTwo() {
       <div className='mx-auto rounded-md border border-[#3d3d3e] bg-[#17171A] p-4 md:p-8 sm:p-12'>
         <div className='flex flex-col gap-8 lg:flex-row lg:gap-50'>
           {/* Logo column */}
-          <div className='shrink-0 flex gap-1'>
-            <div className='flex gap-2 justify-center'>
+          <div className='shrink-0 flex gap-1 items-start'>
+            <div className='flex gap-2 items-center'>
               <Link href='/' aria-label='go home'>
                 <Image
-                  src='/logo-pink.svg'
+                  src='/floot.svg'
                   alt='Floot'
                   width={25}
                   height={25}

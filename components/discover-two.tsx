@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ArrowRight, Heart } from 'lucide-react';
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from './ui/button';
 
 const projects = [
   {
@@ -187,13 +188,10 @@ export default function DiscoverTwo() {
 
         {/* View marketplace link */}
         <div className='flex justify-center mt-10'>
-          <Link
-            href='/'
-            className='inline-flex items-center gap-1.5 text-sm text-zinc-800 font-medium border border-gray-200 rounded-lg px-5 py-2.5 hover:bg-gray-50 transition-colors shadow-[0_1px_2px_rgba(0,0,0,0.05)]'
-          >
+          <Button variant='flootfive' >
             View marketplace
             <ArrowRight className='size-4' />
-          </Link>
+          </Button>
         </div>
       </div>
     </div>

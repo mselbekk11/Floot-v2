@@ -34,7 +34,7 @@ export default function NavThree() {
             : 'border border-transparent'
         }`}
       >
-        <div className='flex items-center h-[50px] px-2'>
+        <div className='flex items-center h-[50px] px-4'>
           {/* Logo - left */}
           <div className='w-[200px] flex items-center gap-1'>
             <Image src='/floot.svg' alt='Floot' width={20} height={20} />

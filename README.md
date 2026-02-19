@@ -23,3 +23,6 @@ border-b border-zinc-300
 max-w-[1240px]
 
 text-[#818181]
+
+
+slider grey - #1A1A1A

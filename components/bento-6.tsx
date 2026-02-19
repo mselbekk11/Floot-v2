@@ -6,28 +6,33 @@ const bentoItems = [
     description:
       'Start charging for your products or services instantly with secure, built-in payment tools.',
     backgroundImage: '/A.png',
+    icon: '/Secure_Card.svg',
   },
   {
     title: 'User Management',
     description:
       'Easily add customers, team members, or members to your app in just a few clicks.',
     backgroundImage: '/B.png',
+    icon: '/Secure_Card_2.svg',
   },
   {
     title: 'Backend & Database',
     description: 'Comes with a secure backend & database built in.',
     backgroundImage: '/C.png',
+    icon: '/icon-t.svg',
   },
   {
     title: '1 Click Hosting',
     description: 'Launch your app to the world with a single click.',
     backgroundImage: '/A.png',
+    icon: '/icon-t.svg',
   },
   {
     title: 'Monitoring',
     description:
       'Floot keeps an eye on your app, detecting issues 24/7.',
     backgroundImage: '/B.png',
+    icon: '/icon-t.svg',
   },
 ];
 
@@ -50,7 +55,15 @@ function BentoCard({
               fill
               className='object-cover pointer-events-none z-0'
             />
-            <div className={`relative z-10 rounded-lg ${imageHeight}`} />
+            <div className={`relative z-10 rounded-lg ${imageHeight} flex items-center justify-center`}>
+              <Image
+                src={item.icon}
+                alt={item.title}
+                width={200}
+                height={200}
+                className='pointer-events-none'
+              />
+            </div>
           </div>
         </div>
         {/* Text */}
