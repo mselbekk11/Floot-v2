@@ -1,5 +1,8 @@
+'use client';
+
 import { Button } from './ui/button';
 import Image from 'next/image';
+import { motion } from 'motion/react';
 
 const features = [
   {
@@ -50,8 +53,12 @@ export default function FeatureTwo() {
             className='grid grid-cols-1 lg:grid-cols-10 gap-8 xl:gap-16 items-start'
           >
             {/* Text */}
-            <div
+            <motion.div
               className={`lg:col-span-4 flex flex-col gap-6 ${feature.reversed ? 'order-1 lg:order-2' : 'order-1'}`}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
             >
               <div className='flex flex-col gap-3'>
                 <p className='font-[family-name:var(--font-geist-sans)] text-sm font-medium text-[#FF3800]'>
@@ -72,11 +79,15 @@ export default function FeatureTwo() {
               <div>
                 <Button variant='pill'>Start Building</Button>
               </div>
-            </div>
+            </motion.div>
 
             {/* Video */}
-            <div
+            <motion.div
               className={`lg:col-span-6 ${feature.reversed ? 'order-2 lg:order-1' : 'order-2'}`}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
             >
               <div className='rounded-xl border border-gray-300 p-1 shadow-[0_8px_20px_rgba(0,0,0,0.2)]'>
                 <div className='relative p-5 border border-gray-300 rounded-lg overflow-hidden'>
@@ -98,7 +109,7 @@ export default function FeatureTwo() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

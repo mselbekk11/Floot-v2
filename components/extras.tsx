@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'motion/react';
 import AutoScale from '@/public/autoscaling-1.svg';
 import Backups from '@/public/backups-1.svg';
 import Domains from '@/public/domains-1.svg';
@@ -50,7 +53,13 @@ export default function Extras() {
     <div className='bg-[#ffffff] py-16 md:py-30 border-b border-zinc-300'>
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Intro */}
-        <div className='mb-10'>
+        <motion.div
+          className='mb-10'
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+        >
           <p className='font-[family-name:var(--font-geist-sans)] text-sm font-medium text-[#FF3800]'>
             And much more
           </p>
@@ -61,10 +70,16 @@ export default function Extras() {
             From autoscaling to live support, Floot handles the infrastructure
             so you can focus on building.
           </p>
-        </div>
+        </motion.div>
 
         {/* Feature grid */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        <motion.div
+          className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+        >
           {features.map((feature) => (
             <div
               key={feature.title}
@@ -86,7 +101,7 @@ export default function Extras() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

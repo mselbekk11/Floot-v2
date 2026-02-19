@@ -5,6 +5,7 @@ import { ArrowRight, Heart } from 'lucide-react';
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from './ui/button';
+import { motion } from 'motion/react';
 
 const projects = [
   {
@@ -132,7 +133,13 @@ export default function DiscoverTwo() {
         {/* Tabs */}
         <Tabs defaultValue='aiapps' className='!block'>
           {/* Header + Tabs row */}
-          <div className='flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10'>
+          <motion.div
+            className='flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10'
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+          >
             <div>
               <p className='font-(family-name:--font-geist-sans) text-sm font-medium text-[#FF3800]'>Start from a template</p>
               <h2 className='font-bold text-2xl md:text-2xl text-zinc-800 mb-2 font-bricolage-grotesque'>
@@ -170,7 +177,7 @@ export default function DiscoverTwo() {
                 Dashboards
               </TabsTrigger>
             </TabsList>
-          </div>
+          </motion.div>
 
           <TabsContent value='aiapps'>
             <ProjectGrid items={tabData.aiapps} />
@@ -187,12 +194,18 @@ export default function DiscoverTwo() {
         </Tabs>
 
         {/* View marketplace link */}
-        <div className='flex justify-center mt-10'>
+        <motion.div
+          className='flex justify-center mt-10'
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+        >
           <Button variant='flootfive' >
             View marketplace
             <ArrowRight className='size-4' />
           </Button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

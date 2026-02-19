@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'motion/react';
 
 const items = [
   {
@@ -29,7 +32,13 @@ export default function Yours() {
     <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Intro */}
-        <div className='mb-10 flex flex-col'>
+        <motion.div
+          className='mb-10 flex flex-col'
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+        >
           <p className='font-(family-name:--font-geist-sans) text-sm font-medium text-[#FF3800]'>
             Ownership guarantee
           </p>
@@ -40,10 +49,16 @@ export default function Yours() {
             Everything you build on Floot is yours. Your code, your data, your
             intellectual property — no exceptions.
           </p>
-        </div>
+        </motion.div>
 
         {/* Cards */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        <motion.div
+          className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+        >
           {items.map((item) => (
             <div
               key={item.title}
@@ -84,7 +99,7 @@ export default function Yours() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

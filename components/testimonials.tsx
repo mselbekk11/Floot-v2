@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'motion/react';
 
 const testimonials = [
   // Column 1
@@ -89,7 +92,13 @@ export default function Testimonials() {
     <div className='bg-[#ffffff] py-16 md:py-30 relative'>
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Intro */}
-        <div className='mb-10'>
+        <motion.div
+          className='mb-10'
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+        >
           <p className='font-(family-name:--font-geist-sans) text-sm font-medium text-[#FF3800]'>
             Testimonials
           </p>
@@ -100,10 +109,16 @@ export default function Testimonials() {
             Thousands of creators, founders, and teams trust Floot to bring
             their ideas to life.
           </p>
-        </div>
+        </motion.div>
 
         {/* Masonry grid */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        <motion.div
+          className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+        >
           {testimonials.map((column, colIndex) => (
             <div key={colIndex} className='flex flex-col gap-6'>
               {column.map((item) => (
@@ -133,7 +148,7 @@ export default function Testimonials() {
               ))}
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/* Bottom fade overlay */}

@@ -1,3 +1,5 @@
+'use client';
+
 import {
   CreditCard,
   Users,
@@ -6,6 +8,7 @@ import {
   Activity,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { motion } from 'motion/react';
 
 const bentoItems: {
   title: string;
@@ -53,7 +56,13 @@ export default function BentoSeven() {
     <div className='bg-[#FAFAFA] py-16 md:py-30 border-b border-zinc-300'>
       <div className='mx-auto max-w-[1240px] px-4'>
         {/* Intro */}
-        <div className='mb-10'>
+        <motion.div
+          className='mb-10'
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+        >
           <p className='font-(family-name:--font-geist-sans) text-sm font-medium text-[#FF3800]'>
             Built for scale
           </p>
@@ -64,10 +73,16 @@ export default function BentoSeven() {
             From databases to deployments, Floot handles the complexity so you
             can focus on your product.
           </p>
-        </div>
+        </motion.div>
 
         {/* Parent card wrapping all 5 items */}
-        <div className='rounded-xl border border-gray-200 p-1'>
+        <motion.div
+          className='rounded-xl border border-gray-200 p-1'
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+        >
           <div className='rounded-lg border border-gray-200 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.06)] overflow-hidden'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 divide-x divide-gray-200'>
               {bentoItems.map((item, i) => (
@@ -92,7 +107,7 @@ export default function BentoSeven() {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

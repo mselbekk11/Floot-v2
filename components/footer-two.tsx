@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'motion/react';
 
 const links = [
   {
@@ -47,7 +50,13 @@ const links = [
 export default function FooterTwo() {
   return (
     <footer role='contentinfo' className='bg-zinc-800 px-4 py-4'>
-      <div className='mx-auto rounded-md border border-[#3d3d3e] bg-[#17171A] p-4 md:p-8 sm:p-12'>
+      <motion.div
+        className='mx-auto rounded-md border border-[#3d3d3e] bg-[#17171A] p-4 md:p-8 sm:p-12'
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+      >
         <div className='flex flex-col gap-8 lg:flex-row lg:gap-50'>
           {/* Logo column */}
           <div className='shrink-0 flex gap-1 items-start'>
@@ -88,7 +97,7 @@ export default function FooterTwo() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </footer>
   );
 }
